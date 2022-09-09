@@ -11,7 +11,7 @@ namespace Lune.VR360
         // Start is called before the first frame update
         void Start()
         {
-
+            screenManager.ControllerUI(true);
         }
 
         // Update is called once per frame
