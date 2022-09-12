@@ -10,7 +10,10 @@ public class ExampleScript : MonoBehaviour {
             Debug.Log("Selected: " + index);
         });
     }
-
+    private void LateUpdate()
+    {
+        SelectItem();
+    }
     public void SelectItem(){
 		Debug.Log("Selected Index: " + carouselView.GetCurrentItem());
 	}
