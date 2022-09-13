@@ -714,8 +714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carouselView: {fileID: 281188110306254139}
   panelNumber: 5
-  tittleText: {fileID: 1232511639}
-  bodyText: {fileID: 395140111}
+  tittleText: {fileID: 1232511641}
+  bodyText: {fileID: 395140113}
 --- !u!1 &79797224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,7 +1476,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MIASTO \u0179LE ZAPROJEKTOWANE"
+  m_Text: 
 --- !u!222 &123531013
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3478,6 +3478,7 @@ GameObject:
   - component: {fileID: 395140110}
   - component: {fileID: 395140112}
   - component: {fileID: 395140111}
+  - component: {fileID: 395140113}
   m_Layer: 5
   m_Name: Text (Legacy) (1)
   m_TagString: Untagged
@@ -3538,8 +3539,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Widoczne b\u0142\u0119dy w projektowanym mie\u015Bcie. Zwr\xF3\u0107 uwag\u0119
-    na wszystkie b\u0142\u0119dne koncepcje zagospodarowania terenu."
+  m_Text: 
 --- !u!222 &395140112
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3548,6 +3548,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395140109}
   m_CullTransparentMesh: 1
+--- !u!114 &395140113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395140109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: 
 --- !u!1 &403080894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4117,6 +4130,55 @@ RectTransform:
   m_AnchoredPosition: {x: -3.1714776, y: 0}
   m_SizeDelta: {x: 6711, y: 100}
   m_Pivot: {x: 0, y: 1}
+--- !u!1 &514241187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514241188}
+  - component: {fileID: 514241189}
+  m_Layer: 0
+  m_Name: Localization-Sync
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514241188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514241187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2030648572}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514241189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514241187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cf2546973275f4caa0511552ee3aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableId: 1D91OURa4TbJ9-e-j0Ds13AuKYhBfyj01-LECl45Ierc
+  Sheets:
+  - Name: Sheet2
+    Id: 94271896
+  SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}
 --- !u!1 &531039201
 GameObject:
   m_ObjectHideFlags: 0
@@ -9220,6 +9282,7 @@ GameObject:
   - component: {fileID: 1232511638}
   - component: {fileID: 1232511640}
   - component: {fileID: 1232511639}
+  - component: {fileID: 1232511641}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -9280,7 +9343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WYBIERZ MIASTO
+  m_Text: 
 --- !u!222 &1232511640
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9289,6 +9352,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232511637}
   m_CullTransparentMesh: 1
+--- !u!114 &1232511641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232511637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: 
 --- !u!1 &1251894471
 GameObject:
   m_ObjectHideFlags: 0
@@ -11366,6 +11442,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560431112}
   m_CullTransparentMesh: 1
+--- !u!1 &1563840395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563840396}
+  - component: {fileID: 1563840397}
+  m_Layer: 0
+  m_Name: Localization-Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1563840396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563840395}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2030648572}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1563840397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563840395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c29a5059f19204cae570eeb307d544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1571771896
 GameObject:
   m_ObjectHideFlags: 0
@@ -14635,6 +14755,8 @@ Transform:
   - {fileID: 913648314}
   - {fileID: 269475186}
   - {fileID: 54862910}
+  - {fileID: 1563840396}
+  - {fileID: 514241188}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

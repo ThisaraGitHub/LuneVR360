@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using FM;
 using UnityEngine.UI;
-
+using Assets.SimpleLocalization;
 public class ContentManager : MonoBehaviour
 {
     [SerializeField] private CarouselView carouselView;
     public int panelNumber;
-    public Text tittleText;
-    public Text bodyText;
+    public LocalizedText tittleText;
+    public LocalizedText bodyText;
+    //public LocalizedText selectionText;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,23 +18,24 @@ public class ContentManager : MonoBehaviour
 
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         SelectItem();
     }
     public void SelectItem()
     {
         Debug.Log("Selected Index: " + carouselView.GetCurrentItem());
-        switch (panelNumber) 
+        switch (panelNumber)
         {
             case 5:
-                switch (carouselView.GetCurrentItem()) 
+                switch (carouselView.GetCurrentItem())
                 {
                     case 0:
-                        tittleText.text = "WYBIERZ MIASTO";
-                        bodyText.text = "Content 01 ";
+                        tittleText.LocalizationKey = "Panel5.Image1Tittle";
+                        bodyText.LocalizationKey = "Panel5.Image1ContentDescription";
+                        //selectionText.LocalizationKey = "Panel5.Image1SelectionText";
                         break;
-                           
+
                 }
                 break;
         }
