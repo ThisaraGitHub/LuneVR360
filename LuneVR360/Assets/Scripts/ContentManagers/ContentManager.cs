@@ -11,6 +11,8 @@ public class ContentManager : MonoBehaviour
     public LocalizedText tittleText;
     public LocalizedText bodyText;
     public LocalizedText selectionText;
+    public GameObject nextButton;
+    public GameObject previousButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,7 @@ public class ContentManager : MonoBehaviour
                         tittleText.Localize();
                         bodyText.Localize();
                         selectionText.Localize();
-                        break;   
+                        break;
                     case 1:
                         tittleText.LocalizationKey = "Panel5.Image2Tittle";
                         bodyText.LocalizationKey = "Panel5.Image2ContentDescription";
