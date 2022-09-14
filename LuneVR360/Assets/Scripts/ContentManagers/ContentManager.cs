@@ -6,18 +6,16 @@ using UnityEngine.UI;
 using Assets.SimpleLocalization;
 public class ContentManager : MonoBehaviour
 {
-    [SerializeField] private CarouselView carouselView;
+    public CarouselView carouselView;
     public int panelNumber;
     public LocalizedText tittleText;
     public LocalizedText bodyText;
     public LocalizedText selectionText;
-    public GameObject nextButton;
-    public GameObject previousButton;
     // Start is called before the first frame update
     void Start()
     {
 
-
+        SelectItem();
     }
 
     private void Update()
@@ -52,6 +50,36 @@ public class ContentManager : MonoBehaviour
                         tittleText.LocalizationKey = "Panel5.Image3Tittle";
                         bodyText.LocalizationKey = "Panel5.Image3ContentDescription";
                         selectionText.LocalizationKey = "Panel5.Image3SelectionText";
+                        tittleText.Localize();
+                        bodyText.Localize();
+                        selectionText.Localize();
+                        break;
+
+                }
+                break;
+            case 6:
+                switch (carouselView.GetCurrentItem())
+                {
+                    case 0:
+                        tittleText.LocalizationKey = "Panel6.Image1Tittle";
+                        bodyText.LocalizationKey = "Panel6.Image1ContentDescription";
+                        selectionText.LocalizationKey = "Panel6.Image1SelectionText";
+                        tittleText.Localize();
+                        bodyText.Localize();
+                        selectionText.Localize();
+                        break;
+                    case 1:
+                        tittleText.LocalizationKey = "Panel6.Image2Tittle";
+                        bodyText.LocalizationKey = "Panel6.Image2ContentDescription";
+                        selectionText.LocalizationKey = "Panel6.Image2SelectionText";
+                        tittleText.Localize();
+                        bodyText.Localize();
+                        selectionText.Localize();
+                        break;
+                    case 2:
+                        tittleText.LocalizationKey = "Panel6.Image3Tittle";
+                        bodyText.LocalizationKey = "Panel6.Image3ContentDescription";
+                        selectionText.LocalizationKey = "Panel6.Image3SelectionText";
                         tittleText.Localize();
                         bodyText.Localize();
                         selectionText.Localize();
