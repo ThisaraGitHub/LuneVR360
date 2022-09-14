@@ -29,21 +29,13 @@ public class DataFromExternalStorage : MonoBehaviour
 
         videoPlayer.url = _path;
 
-        //_controller = GetComponent<VideoPlayerController>();
     }
 
     private void Start()
     {
         if (playOnAwake)
         {
-            //if (_controller != null)
-            //{
-            //    _controller.PlayVideoNoFade();
-            //}
-            //else
-            //{
             videoPlayer.Play();
-            //}
         }
 
         //Oo.Log("Video path: " + _path);
