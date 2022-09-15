@@ -6201,7 +6201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1857259867353640, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4259258041984736, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
       propertyPath: m_RootOrder
@@ -6246,6 +6246,62 @@ PrefabInstance:
     - target: {fileID: 4259258041984736, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801452420515590, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801452420515590, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801452420515590, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114919744775036976, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: displayRayLength
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.38431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.22352941
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.9098039
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 0.30980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0.13333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120536677444369350, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0.24691391
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90b9272500c8423ebe001fd6ed94d33, type: 3}
@@ -9411,7 +9467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1785732380311064, guid: 5a2eeacf4b39746a3856e6136af369d7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114552953460054958, guid: 5a2eeacf4b39746a3856e6136af369d7, type: 3}
       propertyPath: m_Color.b
@@ -12312,7 +12368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99426624077e77d4eaaf949642276860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: {fileID: 2800000, guid: d7b1232d05dadef4d9e4ced047ddfa1d, type: 3}
   fileName: test_texture.png
 --- !u!1 &1694013155
 GameObject:
@@ -15014,7 +15069,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087292029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
