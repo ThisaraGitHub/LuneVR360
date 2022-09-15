@@ -46,6 +46,8 @@ public class ContentManager : MonoBehaviour
                         bodyTextDummy.text = "Bad Designed City";
                         selectionTextDummy.text = "Bad City";
 
+                        print("Bad design city selected");
+
                         break;
                     case 1:
                         //tittleText.LocalizationKey = "Panel5.Image2Tittle";
@@ -75,6 +77,8 @@ public class ContentManager : MonoBehaviour
                         tittleTextDummy.text = "Path 1";
                         bodyTextDummy.text = "Path 1";
                         selectionTextDummy.text = "Path 1";
+
+                        print("Bad design city selected Path 1 selected");
                         break;
                     case 1:
                         //tittleText.LocalizationKey = "Panel6.Image2Tittle";
