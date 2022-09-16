@@ -6,6 +6,7 @@ using Evereal.VRVideoPlayer;
 
 public class LoadImageFromExternalStorage : MonoBehaviour
 {
+    public VoiceoverPlay voiceoverPlay;
 
     private MeshRenderer meshRenderer;
     private string initial360Image = "test_texture.png";
@@ -68,35 +69,50 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 case 0:
                     SetTexture(route1Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot1"));
                     break;
                 case 1:
                     SetTexture(route2Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot2"));
                     break;
                 case 2:
                     SetTexture(route3Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot3"));
                     break;
                 case 3:
                     SetTexture(route4Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot4"));
                     break;
                 case 4:
                     SetTexture(route5Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot5"));
                     break;
                 case 5:
                     SetTexture(route6Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot6"));
                     break;
                 case 6:
                     SetTexture(route7Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot7"));
                     break;
                 case 7:
                     SetTexture(route8Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot8"));
                     break;
                 case 8:
                     SetTexture(route8Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot9"));
                     break;
             }
 
 
         }
 
+    }
+
+    IEnumerator PlayVoiceovers(string nameofteClip)
+    {
+        yield return new WaitForSeconds(1);
+        voiceoverPlay.SwitchVoiceoverClips(nameofteClip);
     }
 }

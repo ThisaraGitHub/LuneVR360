@@ -7,6 +7,7 @@ namespace Evereal.VRVideoPlayer
 {
     public class VRImageSelection : ButtonBase
     {
+        public VoiceoverPlay voiceoverPlay;
         public Fade fade;
         public NumberHighlight numberHighlightNextButton;
         public ScreenManager screenManager;
@@ -27,15 +28,13 @@ namespace Evereal.VRVideoPlayer
 
         protected override void OnClick()
         {
-            //screenManager.HotspotSelection(false);
-            //numberHighlightNextButton.ResetAnimation();
             if (fade)
             {
                 StartCoroutine(fade.StartFadeOut());
+                voiceoverPlay.StopVoicePlay();
                 StartCoroutine(WaitandFadeIn());
                 Screen7ActiveStatus(false);
             }
-
         }
 
         IEnumerator WaitandFadeIn()
@@ -46,13 +45,13 @@ namespace Evereal.VRVideoPlayer
             StartCoroutine(fade.StartFadeIn());
         }
 
-        public void Screen7ActiveStatus(bool status) 
+        public void Screen7ActiveStatus(bool status)
         {
             if (status)
             {
                 screen7Animator.SetInteger("Anim", 0);
             }
-            else 
+            else
             {
                 screen7Animator.SetInteger("Anim", 1);
             }
