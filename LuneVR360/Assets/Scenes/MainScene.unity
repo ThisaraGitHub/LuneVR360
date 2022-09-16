@@ -2451,6 +2451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenManager: {fileID: 913648315}
+  vRImageSelection: {fileID: 1034761333}
 --- !u!1 &282615036
 GameObject:
   m_ObjectHideFlags: 0
@@ -6493,6 +6494,12 @@ MonoBehaviour:
   isPanel5Enabled: 0
   isPanel6Enabled: 0
   isPanel7Enabled: 0
+  isPanel2OpnedOnce: 0
+  isPanel3OpnedOnce: 0
+  isPanel4OpnedOnce: 0
+  isPanel5OpnedOnce: 0
+  isPanel6OpnedOnce: 0
+  isPanel7OpnedOnce: 0
 --- !u!1 &915929329
 GameObject:
   m_ObjectHideFlags: 0

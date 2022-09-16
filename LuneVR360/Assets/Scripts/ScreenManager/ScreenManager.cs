@@ -20,6 +20,14 @@ namespace Lune.VR360
         public bool isPanel5Enabled = false;
         public bool isPanel6Enabled = false;
         public bool isPanel7Enabled = false;
+
+        public bool isPanel2OpnedOnce = false;
+        public bool isPanel3OpnedOnce = false;
+        public bool isPanel4OpnedOnce = false;
+        public bool isPanel5OpnedOnce = false;
+        public bool isPanel6OpnedOnce = false;
+        public bool isPanel7OpnedOnce = false;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -49,6 +57,7 @@ namespace Lune.VR360
             {
                 panel2.SetActive(true);
                 isPanel2Enabled = true;
+                isPanel2OpnedOnce = true;
             }
             else
             {
@@ -63,6 +72,7 @@ namespace Lune.VR360
             {
                 panel3.SetActive(true);
                 isPanel3Enabled = true;
+                isPanel3OpnedOnce = true;
             }
             else
             {
@@ -76,6 +86,7 @@ namespace Lune.VR360
             {
                 panel4.SetActive(true);
                 isPanel4Enabled = true;
+                isPanel4OpnedOnce = true;
             }
             else
             {
@@ -89,6 +100,7 @@ namespace Lune.VR360
             {
                 panel5.SetActive(true);
                 isPanel5Enabled = true;
+                isPanel5OpnedOnce = true;
             }
             else
             {
@@ -102,6 +114,7 @@ namespace Lune.VR360
             {
                 panel6.SetActive(true);
                 isPanel6Enabled = true;
+                isPanel6OpnedOnce = true;
             }
             else
             {
@@ -115,6 +128,7 @@ namespace Lune.VR360
             {
                 panel7.SetActive(true);
                 isPanel7Enabled = true;
+                isPanel7OpnedOnce = true;
             }
             else
             {

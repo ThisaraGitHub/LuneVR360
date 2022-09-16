@@ -33,7 +33,7 @@ namespace Evereal.VRVideoPlayer
             {
                 StartCoroutine(fade.StartFadeOut());
                 StartCoroutine(WaitandFadeIn());
-                screen7Animator.SetInteger("Anim", 1);
+                Screen7ActiveStatus(false);
             }
 
         }
@@ -44,6 +44,18 @@ namespace Evereal.VRVideoPlayer
             loadImageFromExternalStorage.Switch360Images();
             yield return new WaitForSeconds(1);
             StartCoroutine(fade.StartFadeIn());
+        }
+
+        public void Screen7ActiveStatus(bool status) 
+        {
+            if (status)
+            {
+                screen7Animator.SetInteger("Anim", 0);
+            }
+            else 
+            {
+                screen7Animator.SetInteger("Anim", 1);
+            }
         }
     }
 }
