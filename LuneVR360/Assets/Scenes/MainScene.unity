@@ -7168,9 +7168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  fade: {fileID: 1277319098}
   numberHighlightNextButton: {fileID: 2060267314}
-  numberHighlightPreviousButton: {fileID: 1879609548}
   screenManager: {fileID: 913648315}
+  loadImageFromExternalStorage: {fileID: 1689832973}
 --- !u!1 &1044660098
 GameObject:
   m_ObjectHideFlags: 0
@@ -8977,13 +8978,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1589151146}
     m_Modifications:
+    - target: {fileID: 1489959866657978, guid: 5a2eeacf4b39746a3856e6136af369d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1785732380311064, guid: 5a2eeacf4b39746a3856e6136af369d7, type: 3}
       propertyPath: m_Name
       value: UICanvas_Gaze
       objectReference: {fileID: 0}
     - target: {fileID: 1785732380311064, guid: 5a2eeacf4b39746a3856e6136af369d7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114552953460054958, guid: 5a2eeacf4b39746a3856e6136af369d7, type: 3}
       propertyPath: m_Color.b
@@ -11568,7 +11573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 320060e342b8b3146a6f5e37615a191b, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 320060e342b8b3146a6f5e37615a191b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11597,7 +11602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99426624077e77d4eaaf949642276860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: test_texture.png
 --- !u!1 &1694013155
 GameObject:
   m_ObjectHideFlags: 0
@@ -12627,7 +12631,7 @@ MonoBehaviour:
   hotspotNumberText: {fileID: 2032718519}
   isNumberIncreasing: 0
   numberAnimationContainer: {fileID: 1114367079}
-  numberAnimator: {fileID: 0}
+  numberAnimator: {fileID: 1114367081}
 --- !u!1 &1900480923
 GameObject:
   m_ObjectHideFlags: 0
@@ -13923,7 +13927,7 @@ MonoBehaviour:
   hotspotNumberText: {fileID: 2032718519}
   isNumberIncreasing: 1
   numberAnimationContainer: {fileID: 1114367079}
-  numberAnimator: {fileID: 0}
+  numberAnimator: {fileID: 1114367081}
 --- !u!1 &2073247285
 GameObject:
   m_ObjectHideFlags: 0

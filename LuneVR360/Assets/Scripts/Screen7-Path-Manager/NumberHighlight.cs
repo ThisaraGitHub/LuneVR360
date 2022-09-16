@@ -9,7 +9,7 @@ namespace Evereal.VRVideoPlayer
     {
         public Text hotspotNumberText;
         public bool isNumberIncreasing = false;
-        private static int hotspotNumber = 0;
+        public static int hotspotNumber = 0;
 
         public GameObject numberAnimationContainer;
         [SerializeField] public Animator numberAnimator;
