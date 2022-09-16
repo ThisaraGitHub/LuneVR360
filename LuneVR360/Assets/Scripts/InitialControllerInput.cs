@@ -17,12 +17,21 @@ namespace Lune.VR360
         // Update is called once per frame
         void Update()
         {
-            if (OVRInput.Get(OVRInput.Button.One))
+            if (!screenManager.isPanel2Enabled &&
+                !screenManager.isPanel3Enabled &&
+                !screenManager.isPanel4Enabled &&
+                !screenManager.isPanel5Enabled &&
+                !screenManager.isPanel6Enabled &&
+                !screenManager.isPanel7Enabled)
             {
-                Debug.Log("A button pressed");
-                screenManager.ControllerUI(false);
-                screenManager.TittleScreenUI(true);
+                if (OVRInput.Get(OVRInput.Button.One))
+                {
+                    Debug.Log("A button pressed");
+                    screenManager.ControllerUI(false);
+                    screenManager.TittleScreenUI(true);
+                }
             }
+            
         }
     }
 }

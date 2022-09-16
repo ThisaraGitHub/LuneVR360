@@ -6487,6 +6487,12 @@ MonoBehaviour:
   panel5: {fileID: 2102879861}
   panel6: {fileID: 203950844}
   panel7: {fileID: 1575236796}
+  isPanel2Enabled: 0
+  isPanel3Enabled: 0
+  isPanel4Enabled: 0
+  isPanel5Enabled: 0
+  isPanel6Enabled: 0
+  isPanel7Enabled: 0
 --- !u!1 &915929329
 GameObject:
   m_ObjectHideFlags: 0
@@ -7158,12 +7164,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1034761327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bac323804f1a184581b4a6f504c4eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 695f56b6d7c8c0e4d8efdc3df8e9dde3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  numberHighlightNextButton: {fileID: 2060267314}
+  numberHighlightPreviousButton: {fileID: 1879609548}
   screenManager: {fileID: 913648315}
-  indexNumber: 7
 --- !u!1 &1044660098
 GameObject:
   m_ObjectHideFlags: 0
@@ -12617,8 +12624,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  hotspotNumberText: {fileID: 2032718519}
   isNumberIncreasing: 0
   numberAnimationContainer: {fileID: 1114367079}
+  numberAnimator: {fileID: 0}
 --- !u!1 &1900480923
 GameObject:
   m_ObjectHideFlags: 0
@@ -13911,8 +13920,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  hotspotNumberText: {fileID: 2032718519}
   isNumberIncreasing: 1
   numberAnimationContainer: {fileID: 1114367079}
+  numberAnimator: {fileID: 0}
 --- !u!1 &2073247285
 GameObject:
   m_ObjectHideFlags: 0

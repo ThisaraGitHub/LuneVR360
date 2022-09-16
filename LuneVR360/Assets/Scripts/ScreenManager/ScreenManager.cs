@@ -13,6 +13,13 @@ namespace Lune.VR360
         public GameObject panel5;
         public GameObject panel6;
         public GameObject panel7;
+
+        public bool isPanel2Enabled = false;
+        public bool isPanel3Enabled = false;
+        public bool isPanel4Enabled = false;
+        public bool isPanel5Enabled = false;
+        public bool isPanel6Enabled = false;
+        public bool isPanel7Enabled = false;
         // Start is called before the first frame update
         void Start()
         {
@@ -41,10 +48,12 @@ namespace Lune.VR360
             if (ActiveStatus)
             {
                 panel2.SetActive(true);
+                isPanel2Enabled = true;
             }
             else
             {
                 panel2.SetActive(false);
+                isPanel2Enabled = false;
             }
 
         }
@@ -53,10 +62,12 @@ namespace Lune.VR360
             if (ActiveStatus)
             {
                 panel3.SetActive(true);
+                isPanel3Enabled = true;
             }
             else
             {
                 panel3.SetActive(false);
+                isPanel3Enabled = false;
             }
         }
         public void ControlButtonsDescription(bool ActiveStatus)
@@ -64,10 +75,12 @@ namespace Lune.VR360
             if (ActiveStatus)
             {
                 panel4.SetActive(true);
+                isPanel4Enabled = true;
             }
             else
             {
                 panel4.SetActive(false);
+                isPanel4Enabled = false;
             }
         }
         public void CitySelection(bool ActiveStatus)
@@ -75,10 +88,12 @@ namespace Lune.VR360
             if (ActiveStatus)
             {
                 panel5.SetActive(true);
+                isPanel5Enabled = true;
             }
             else
             {
                 panel5.SetActive(false);
+                isPanel5Enabled = false;
             }
         }
         public void PathSelection(bool ActiveStatus)
@@ -86,10 +101,12 @@ namespace Lune.VR360
             if (ActiveStatus)
             {
                 panel6.SetActive(true);
+                isPanel6Enabled = true;
             }
             else
             {
                 panel6.SetActive(false);
+                isPanel6Enabled = false;
             }
         }
         public void HotspotSelection(bool ActiveStatus)
@@ -97,10 +114,12 @@ namespace Lune.VR360
             if (ActiveStatus)
             {
                 panel7.SetActive(true);
+                isPanel7Enabled = true;
             }
             else
             {
                 panel7.SetActive(false);
+                isPanel7Enabled = false;
             }
         }
 
