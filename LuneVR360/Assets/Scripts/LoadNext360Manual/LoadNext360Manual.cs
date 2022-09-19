@@ -36,7 +36,7 @@ namespace Evereal.VRVideoPlayer
             yield return new WaitForSeconds(2);
             NumberHighlight.hotspotNumber += 1;
             vRImageSelection.Load360();
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
             StartCoroutine(fade.StartFadeIn());
         }
 
