@@ -7,6 +7,7 @@ using Evereal.VRVideoPlayer;
 public class LoadImageFromExternalStorage : MonoBehaviour
 {
     public VoiceoverPlay voiceoverPlay;
+    public GameObject nextHotspotLoadIcon;
 
     private MeshRenderer meshRenderer;
     private string initial360Image = "test_texture.png";
@@ -31,21 +32,8 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route1Hostpot8BadConseq = "R1-H8-bad-conseq.png";
     private string route1Hostpot9BadConseq = "R1-H9-bad-conseq.png";
 
-    private bool isRoute1Hostpot1BadAudioPlayed = false;
-    private bool isRoute1Hostpot2BadAudioPlayed = false;
-    private bool isRoute1Hostpot3BadAudioPlayed = false;
-    private bool isRoute1Hostpot4BadAudioPlayed = false;
-    private bool isRoute1Hostpot5BadAudioPlayed = false;
-    private bool isRoute1Hostpot6BadAudioPlayed = false;
-    private bool isRoute1Hostpot7BadAudioPlayed = false;
-    private bool isRoute1Hostpot8BadAudioPlayed = false;
-    private bool isRoute1Hostpot9BadAudioPlayed = false;
-
-
     private string _rootPath;
     private string _path;
-    private object bytes;
-
 
     private void Awake()
     {
@@ -81,6 +69,49 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         return null;
     }
 
+    public void Switch360ImagesManually() 
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            _rootPath = Application.persistentDataPath;
+
+            switch (NumberHighlight.hotspotNumber)
+            {
+                case 0:
+                    SetTexture(route2Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot2"));
+                    break;
+                case 1:
+                    SetTexture(route3Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot3"));
+                    break;
+                case 2:
+                    SetTexture(route4Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot4"));
+                    break;
+                case 3:
+                    SetTexture(route5Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot5"));
+                    break;
+                case 4:
+                    SetTexture(route6Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot6"));
+                    break;
+                case 5:
+                    SetTexture(route7Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot7"));
+                    break;
+                case 6:
+                    SetTexture(route8Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot8"));
+                    break;
+                case 7:
+                    SetTexture(route8Hostpot1Bad);
+                    StartCoroutine(PlayVoiceovers("BD-HotSpot9"));
+                    break;
+            }
+        }
+    }
     public void Switch360Images()
     {
         if (Application.platform == RuntimePlatform.Android)
@@ -124,6 +155,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                 case 8:
                     SetTexture(route8Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot9"));
+                    nextHotspotLoadIcon.SetActive(false);
                     break;
             }
 

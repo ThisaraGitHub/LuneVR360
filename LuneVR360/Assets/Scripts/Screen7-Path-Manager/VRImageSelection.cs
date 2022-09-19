@@ -9,6 +9,7 @@ namespace Evereal.VRVideoPlayer
     {
         public SceneToggleButton sceneToggleButton;
         public GameObject hotspotSwitchButton;
+        public GameObject hotspotLoadManualButton;
         public VoiceoverPlay voiceoverPlay;
         public Fade fade;
         public NumberHighlight numberHighlightNextButton;
@@ -21,6 +22,7 @@ namespace Evereal.VRVideoPlayer
         {
             screen7Animator = screen7.GetComponent<Animator>();
             hotspotSwitchButton.SetActive(false);
+            hotspotLoadManualButton.SetActive(false);
         }
 
         // Update is called once per frame
@@ -40,11 +42,16 @@ namespace Evereal.VRVideoPlayer
             }
         }
 
+        public void Load360()
+        {
+            StartCoroutine(WaitandFadeIn());
+        }
         IEnumerator WaitandFadeIn()
         {
             yield return new WaitForSeconds(2);
             sceneToggleButton.isToggle = false;
             hotspotSwitchButton.SetActive(true);
+            hotspotLoadManualButton.SetActive(true);
             loadImageFromExternalStorage.Switch360Images();
             yield return new WaitForSeconds(1);
             StartCoroutine(fade.StartFadeIn());
