@@ -7,6 +7,8 @@ namespace Evereal.VRVideoPlayer
 {
     public class VRImageSelection : ButtonBase
     {
+        public SceneToggleButton sceneToggleButton;
+        public GameObject hotspotSwitchButton;
         public VoiceoverPlay voiceoverPlay;
         public Fade fade;
         public NumberHighlight numberHighlightNextButton;
@@ -18,6 +20,7 @@ namespace Evereal.VRVideoPlayer
         void Start()
         {
             screen7Animator = screen7.GetComponent<Animator>();
+            hotspotSwitchButton.SetActive(false);
         }
 
         // Update is called once per frame
@@ -40,6 +43,8 @@ namespace Evereal.VRVideoPlayer
         IEnumerator WaitandFadeIn()
         {
             yield return new WaitForSeconds(2);
+            sceneToggleButton.isToggle = false;
+            hotspotSwitchButton.SetActive(true);
             loadImageFromExternalStorage.Switch360Images();
             yield return new WaitForSeconds(1);
             StartCoroutine(fade.StartFadeIn());

@@ -21,9 +21,31 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route8Hostpot1Bad = "R1-H8-bad.png";
     private string route9Hostpot1Bad = "R1-H9-bad.png";
 
+    private string route1Hostpot1BadConseq = "R1-H1-bad-conseq.png";
+    private string route1Hostpot2BadConseq = "R1-H2-bad-conseq.png";
+    private string route1Hostpot3BadConseq = "R1-H3-bad-conseq.png";
+    private string route1Hostpot4BadConseq = "R1-H4-bad-conseq.png";
+    private string route1Hostpot5BadConseq = "R1-H5-bad-conseq.png";
+    private string route1Hostpot6BadConseq = "R1-H6-bad-conseq.png";
+    private string route1Hostpot7BadConseq = "R1-H7-bad-conseq.png";
+    private string route1Hostpot8BadConseq = "R1-H8-bad-conseq.png";
+    private string route1Hostpot9BadConseq = "R1-H9-bad-conseq.png";
+
+    private bool isRoute1Hostpot1BadAudioPlayed = false;
+    private bool isRoute1Hostpot2BadAudioPlayed = false;
+    private bool isRoute1Hostpot3BadAudioPlayed = false;
+    private bool isRoute1Hostpot4BadAudioPlayed = false;
+    private bool isRoute1Hostpot5BadAudioPlayed = false;
+    private bool isRoute1Hostpot6BadAudioPlayed = false;
+    private bool isRoute1Hostpot7BadAudioPlayed = false;
+    private bool isRoute1Hostpot8BadAudioPlayed = false;
+    private bool isRoute1Hostpot9BadAudioPlayed = false;
+
+
     private string _rootPath;
     private string _path;
     private object bytes;
+
 
     private void Awake()
     {
@@ -109,7 +131,44 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         }
 
     }
+    public void Switch360ConsequencesImages()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            _rootPath = Application.persistentDataPath;
 
+            switch (NumberHighlight.hotspotNumber)
+            {
+                case 0:
+                    SetTexture(route1Hostpot1BadConseq);
+                    break;
+                case 1:
+                    SetTexture(route1Hostpot2BadConseq);
+                    break;
+                case 2:
+                    SetTexture(route1Hostpot3BadConseq);
+                    break;
+                case 3:
+                    SetTexture(route1Hostpot4BadConseq);
+                    break;
+                case 4:
+                    SetTexture(route1Hostpot5BadConseq);
+                    break;
+                case 5:
+                    SetTexture(route1Hostpot6BadConseq);
+                    break;
+                case 6:
+                    SetTexture(route1Hostpot7BadConseq);
+                    break;
+                case 7:
+                    SetTexture(route1Hostpot8BadConseq);
+                    break;
+                case 8:
+                    SetTexture(route1Hostpot9BadConseq);
+                    break;
+            }
+        }
+    }
     IEnumerator PlayVoiceovers(string nameofteClip)
     {
         yield return new WaitForSeconds(1);
