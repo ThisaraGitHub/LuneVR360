@@ -64,18 +64,42 @@ namespace Lune.VR360
                     {
                         //this.speedMult = 1f;
                         print("Off");
-                        canvasObject.SetActive(true);
+                        if (!screenManager.isPanel7Enabled)
+                        {
+                            canvasObject.SetActive(true);
+                        }
+                        else
+                        {
+                            vRImageSelection.Screen7ActiveStatus(false);
+                        }
+
                         this.modGodspeed = false;
                     }
                     else if (!this.modGodspeed)
                     {
                         //this.speedMult = 5f;
                         print("On");
-                        canvasObject.SetActive(false);
+                        if (!screenManager.isPanel7Enabled)
+                        {
+                            canvasObject.SetActive(false);
+                        }
+                        else 
+                        {
+                            vRImageSelection.Screen7ActiveStatus(true);
+                        }
                         this.modGodspeed = true;
                     }
                 }
             }
+
+            //if (screenManager.isPanel7Enabled && !this.modGodspeed)
+            //{
+            //    vRImageSelection.Screen7ActiveStatus(true);
+            //}
+            //else if (screenManager.isPanel7Enabled && this.modGodspeed)
+            //{
+            //    vRImageSelection.Screen7ActiveStatus(false);
+            //}
 
             //if (onetime &&
             //       screenManager.isPanel2OpnedOnce &&
@@ -84,7 +108,7 @@ namespace Lune.VR360
             //       screenManager.isPanel5OpnedOnce &&
             //       screenManager.isPanel6OpnedOnce &&
             //       screenManager.isPanel7OpnedOnce &&
-            //       OVRInput.Get(OVRInput.Button.One))
+            //       OVRInput.GetDown(OVRInput.Button.One))
             //{
             //    vRImageSelection.Screen7ActiveStatus(true);
             //}
