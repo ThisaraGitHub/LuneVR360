@@ -29,23 +29,65 @@ namespace Lune.VR360
         // Update is called once per frame
         void Update()
         {
-            if (OVRInput.GetDown(OVRInput.Button.One))
+            //if (OVRInput.GetDown(OVRInput.Button.One))
+            //{
+            //    
+            //}
+
+            if (!screenManager.isPanel2Enabled &&
+              !screenManager.isPanel3Enabled &&
+              !screenManager.isPanel4Enabled &&
+              !screenManager.isPanel5Enabled &&
+              !screenManager.isPanel6Enabled &&
+              !screenManager.isPanel7Enabled)
             {
-                if (this.modGodspeed)
+                if (OVRInput.Get(OVRInput.Button.One))
                 {
-                    //this.speedMult = 1f;
-                    print("Off");
-                    screenManager.ControllerUI(true);
-                    this.modGodspeed = false;
+                    if (!onetime)
+                    {
+                        Debug.Log("A button pressed");
+                        screenManager.ControllerUI(false);
+                        screenManager.TittleScreenUI(true);
+                        onetime = true;
+                    }
                 }
-                else if (!this.modGodspeed)
+
+
+            }
+
+            if (!screenManager.isPanel2Enabled)
+            {
+                if (OVRInput.GetDown(OVRInput.Button.One))
                 {
-                    //this.speedMult = 5f;
-                    print("On");
-                    screenManager.ControllerUI(false);
-                    this.modGodspeed = true;
+
+                    if (this.modGodspeed)
+                    {
+                        //this.speedMult = 1f;
+                        print("Off");
+                        canvasObject.SetActive(true);
+                        this.modGodspeed = false;
+                    }
+                    else if (!this.modGodspeed)
+                    {
+                        //this.speedMult = 5f;
+                        print("On");
+                        canvasObject.SetActive(false);
+                        this.modGodspeed = true;
+                    }
                 }
             }
+
+            //if (onetime &&
+            //       screenManager.isPanel2OpnedOnce &&
+            //       screenManager.isPanel3OpnedOnce &&
+            //       screenManager.isPanel4OpnedOnce &&
+            //       screenManager.isPanel5OpnedOnce &&
+            //       screenManager.isPanel6OpnedOnce &&
+            //       screenManager.isPanel7OpnedOnce &&
+            //       OVRInput.Get(OVRInput.Button.One))
+            //{
+            //    vRImageSelection.Screen7ActiveStatus(true);
+            //}
         }
     }
 }

@@ -951,7 +951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &103250274
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2637,8 +2637,12 @@ MonoBehaviour:
   canvasObject: {fileID: 2087292029}
   screenManager: {fileID: 913648315}
   vRImageSelection: {fileID: 1034761333}
+  onetime: 0
+  isAbuttonClicked: 0
   time: 0
   delayedTime: 3
+  isIdleTimeReached: 0
+  modGodspeed: 0
 --- !u!1 &282615036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,7 +4095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &537643033
 RectTransform:
   m_ObjectHideFlags: 0
