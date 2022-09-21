@@ -2634,8 +2634,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71767a5a47c0b59408196f1250297812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasObject: {fileID: 2087292029}
   screenManager: {fileID: 913648315}
   vRImageSelection: {fileID: 1034761333}
+  time: 0
+  delayedTime: 3
 --- !u!1 &282615036
 GameObject:
   m_ObjectHideFlags: 0
