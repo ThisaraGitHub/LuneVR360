@@ -603,6 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 4
 --- !u!114 &50032030
@@ -4180,6 +4181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 0
 --- !u!114 &537643038
@@ -4469,6 +4471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 2
 --- !u!1 &585680638
@@ -4525,6 +4528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 3
 --- !u!114 &585680641
@@ -7555,6 +7559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   sceneToggleButton: {fileID: 633437013}
   hotspotSwitchButton: {fileID: 633437010}
   hotspotLoadManualButton: {fileID: 1952948866}
@@ -7698,6 +7703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 2
 --- !u!114 &1047962869
@@ -8023,6 +8029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 5
 --- !u!1 &1070579874
@@ -9923,6 +9930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 1
 --- !u!114 &1409138533
@@ -10550,6 +10558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 5
 --- !u!114 &1480122727
@@ -11440,6 +11449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 6
 --- !u!1 &1600463165
@@ -11775,6 +11785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 4
 --- !u!1 &1686647493
@@ -14333,6 +14344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 3
 --- !u!1 &2058406483

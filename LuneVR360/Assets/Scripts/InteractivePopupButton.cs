@@ -7,6 +7,7 @@ namespace Evereal.VRVideoPlayer
 {
     public class InteractivePopupButton : ButtonBase
     {
+        public InitialControllerInput initialControllerInput;
         public ScreenManager screenManager;
         public int indexNumber;
         // Start is called before the first frame update
@@ -23,6 +24,7 @@ namespace Evereal.VRVideoPlayer
 
         protected override void OnClick()
         {
+            initialControllerInput.modGodspeed = false;
             switch (indexNumber)
             {
                 case 0:

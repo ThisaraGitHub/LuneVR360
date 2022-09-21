@@ -7,6 +7,7 @@ namespace Evereal.VRVideoPlayer
 {
     public class VRImageSelection : ButtonBase
     {
+        public InitialControllerInput initialControllerInput;
         public SceneToggleButton sceneToggleButton;
         public GameObject hotspotSwitchButton;
         public GameObject hotspotLoadManualButton;
@@ -49,6 +50,7 @@ namespace Evereal.VRVideoPlayer
         IEnumerator WaitandFadeIn()
         {
             yield return new WaitForSeconds(2);
+            initialControllerInput.modGodspeed = false;
             sceneToggleButton.isToggle = false;
             hotspotSwitchButton.SetActive(true);
             hotspotLoadManualButton.SetActive(true);
