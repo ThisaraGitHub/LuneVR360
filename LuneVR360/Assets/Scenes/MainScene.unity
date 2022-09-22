@@ -4865,6 +4865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  voiceoverPlay: {fileID: 2105912330}
   fade: {fileID: 1277319098}
   loadImageFromExternalStorage: {fileID: 1689832973}
   isToggle: 0

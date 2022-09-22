@@ -6,6 +6,7 @@ namespace Evereal.VRVideoPlayer
 {
     public class SceneToggleButton : ButtonBase
     {
+        public VoiceoverPlay voiceoverPlay;
         public Fade fade;
         public LoadImageFromExternalStorage loadImageFromExternalStorage;
         public bool isToggle = false;
@@ -33,11 +34,12 @@ namespace Evereal.VRVideoPlayer
 
         IEnumerator WaitandSwitch()
         {
+            voiceoverPlay.StopVoicePlay();
             yield return new WaitForSeconds(2);
             if (isToggle == false)
             {
                 //do something
-                print("Click 1");
+                print("Click 1"); 
                 loadImageFromExternalStorage.Switch360ConsequencesImages();
                 isToggle = true;
             }
@@ -45,6 +47,7 @@ namespace Evereal.VRVideoPlayer
             {
                 //do something
                 print("Click 2");
+                voiceoverPlay.PlayVoicePlay();
                 loadImageFromExternalStorage.Switch360Images();
                 isToggle = false;
             }

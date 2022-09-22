@@ -92,4 +92,9 @@ public class VoiceoverPlay : MonoBehaviour
     {
         audioSource.Stop();
     }
+
+    public void PlayVoicePlay() 
+    {
+        audioSource.Play();
+    }
 }
