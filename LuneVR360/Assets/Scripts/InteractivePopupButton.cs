@@ -7,6 +7,7 @@ namespace Evereal.VRVideoPlayer
 {
     public class InteractivePopupButton : ButtonBase
     {
+        //public AudioSource clickSound;
         public InitialControllerInput initialControllerInput;
         public ScreenManager screenManager;
         public int indexNumber;
@@ -25,6 +26,7 @@ namespace Evereal.VRVideoPlayer
         protected override void OnClick()
         {
             initialControllerInput.modGodspeed = false;
+           // clickSound.Play();
             switch (indexNumber)
             {
                 case 0:

@@ -6,6 +6,7 @@ using Evereal.VRVideoPlayer;
 
 public class LoadImageFromExternalStorage : MonoBehaviour
 {
+    public GameObject nextHotspotIcon;
     public VoiceoverPlay voiceoverPlay;
     public GameObject nextHotspotLoadIcon;
 
@@ -38,8 +39,12 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private void Awake()
     {
         SetTexture(initial360Image);
-    }
 
+    }
+    private void Start()
+    {
+
+    }
     private void SetTexture(string imageName)
     {
         Texture2D tex = new Texture2D(2, 2);
@@ -69,7 +74,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         return null;
     }
 
-    public void Switch360ImagesManually() 
+    public void Switch360ImagesManually()
     {
         if (Application.platform == RuntimePlatform.Android)
         {
@@ -123,38 +128,47 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                 case 0:
                     SetTexture(route1Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot1"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 151.06f, 0f);
                     break;
                 case 1:
                     SetTexture(route2Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot2"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -73.15f, 0f);
                     break;
                 case 2:
                     SetTexture(route3Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot3"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -45.57f, 0f);
                     break;
                 case 3:
                     SetTexture(route4Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot4"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 62.95f, 0f);
                     break;
                 case 4:
                     SetTexture(route5Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot5"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -75.2f, 0f);
                     break;
                 case 5:
                     SetTexture(route6Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot6"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 120.87f, 0f);
                     break;
                 case 6:
                     SetTexture(route7Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot7"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 161.41f, 0f);
                     break;
                 case 7:
                     SetTexture(route8Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot8"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
                     break;
                 case 8:
                     SetTexture(route8Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot9"));
+                    nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
                     nextHotspotLoadIcon.SetActive(false);
                     break;
             }

@@ -6,6 +6,8 @@ namespace Lune.VR360
 {
     public class ScreenManager : MonoBehaviour
     {
+        public AudioSource menuPopupSound;
+
         public GameObject panel1;
         public GameObject panel2;
         public GameObject panel3;
@@ -58,6 +60,7 @@ namespace Lune.VR360
                 panel2.SetActive(true);
                 isPanel2Enabled = true;
                 isPanel2OpnedOnce = true;
+                StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -73,6 +76,7 @@ namespace Lune.VR360
                 panel3.SetActive(true);
                 isPanel3Enabled = true;
                 isPanel3OpnedOnce = true;
+                StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -87,6 +91,7 @@ namespace Lune.VR360
                 panel4.SetActive(true);
                 isPanel4Enabled = true;
                 isPanel4OpnedOnce = true;
+                StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -101,6 +106,7 @@ namespace Lune.VR360
                 panel5.SetActive(true);
                 isPanel5Enabled = true;
                 isPanel5OpnedOnce = true;
+                StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -115,6 +121,7 @@ namespace Lune.VR360
                 panel6.SetActive(true);
                 isPanel6Enabled = true;
                 isPanel6OpnedOnce = true;
+                StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -129,6 +136,7 @@ namespace Lune.VR360
                 panel7.SetActive(true);
                 isPanel7Enabled = true;
                 isPanel7OpnedOnce = true;
+                StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -137,6 +145,17 @@ namespace Lune.VR360
             }
         }
 
+
+        public IEnumerator WaitandPlayAudio(string type)
+        {
+            switch (type)
+            {
+                case "Menu":
+                    yield return new WaitForSeconds(0f);
+                    menuPopupSound.Play();
+                    break;
+            }
+        }
     }
 }
 
