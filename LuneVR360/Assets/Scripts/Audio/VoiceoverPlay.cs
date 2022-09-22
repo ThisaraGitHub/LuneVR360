@@ -1,10 +1,21 @@
+using Evereal.VRVideoPlayer;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class VoiceoverPlay : MonoBehaviour
 {
+    public SceneToggleButton sceneToggleButton;
     public AudioSource audioSource;
+    public bool BD_P1_CONS_HotSpot1_Played = false;
+    public bool BD_P1_CONS_HotSpot2_Played = false;
+    public bool BD_P1_CONS_HotSpot3_Played = false;
+    public bool BD_P1_CONS_HotSpot4_Played = false;
+    public bool BD_P1_CONS_HotSpot5_Played = false;
+    public bool BD_P1_CONS_HotSpot6_Played = false;
+    public bool BD_P1_CONS_HotSpot7_Played = false;
+    public bool BD_P1_CONS_HotSpot8_Played = false;
+    public bool BD_P1_CONS_HotSpot9_Played = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +27,84 @@ public class VoiceoverPlay : MonoBehaviour
     void Update()
     {
 
+        if (sceneToggleButton.isToggle)
+        {
+            switch (NumberHighlight.hotspotNumber)
+            {
+                case 0:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot1_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot1");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot1_Played = true;
+                    }
+                    break;
+                case 1:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot2_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot2");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot2_Played = true;
+                    }
+                    break;
+                case 2:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot3_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot3");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot3_Played = true;
+                    }
+                    break;
+                case 3:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot4_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot4");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot4_Played = true;
+                    }
+                    break;
+                case 4:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot5_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot5");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot5_Played = true;
+                    }
+                    break;
+                case 5:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot6_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot6");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot6_Played = true;
+                    }
+                    break;
+                case 6:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot7_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot7");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot7_Played = true;
+                    }
+                    break;
+                case 7:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot8_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot8");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot8_Played = true;
+                    }
+                    break;
+                case 8:
+                    if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot9_Played)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot9");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                        BD_P1_CONS_HotSpot9_Played = true;
+                    }
+                    break;
+            }
+        }
     }
 
     public void SwitchVoiceoverClips(string name)
@@ -25,9 +114,11 @@ public class VoiceoverPlay : MonoBehaviour
             case "BD-HotSpot1":
                 if (!audioSource.isPlaying)
                 {
-                    AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-HotSpot1");
-                    audioSource.PlayOneShot(BDHotSpot1);
-
+                    if (!sceneToggleButton.isToggle)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-HotSpot1");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
                 }
                 break;
             case "BD-HotSpot2":
@@ -92,9 +183,20 @@ public class VoiceoverPlay : MonoBehaviour
     {
         audioSource.Stop();
     }
-
-    public void PlayVoicePlay() 
+    public void PlayVoicePlay()
     {
         audioSource.Play();
+    }
+    public void ResetPlayStatus() 
+    {
+        BD_P1_CONS_HotSpot1_Played = false;
+        BD_P1_CONS_HotSpot2_Played = false;
+        BD_P1_CONS_HotSpot3_Played = false;
+        BD_P1_CONS_HotSpot4_Played = false;
+        BD_P1_CONS_HotSpot5_Played = false;
+        BD_P1_CONS_HotSpot6_Played = false;
+        BD_P1_CONS_HotSpot7_Played = false;
+        BD_P1_CONS_HotSpot8_Played = false;
+        BD_P1_CONS_HotSpot9_Played = false;
     }
 }

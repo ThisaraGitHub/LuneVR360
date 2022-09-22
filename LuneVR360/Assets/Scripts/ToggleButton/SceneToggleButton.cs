@@ -29,17 +29,17 @@ namespace Evereal.VRVideoPlayer
                 StartCoroutine(fade.StartFadeOut());
                 StartCoroutine(WaitandSwitch());
             }
-
+            voiceoverPlay.StopVoicePlay();
         }
 
         IEnumerator WaitandSwitch()
         {
-            voiceoverPlay.StopVoicePlay();
             yield return new WaitForSeconds(2);
+            voiceoverPlay.ResetPlayStatus();
             if (isToggle == false)
             {
                 //do something
-                print("Click 1"); 
+                print("Click 1");
                 loadImageFromExternalStorage.Switch360ConsequencesImages();
                 isToggle = true;
             }

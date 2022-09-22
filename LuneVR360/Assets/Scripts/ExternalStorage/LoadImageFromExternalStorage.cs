@@ -122,7 +122,6 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         if (Application.platform == RuntimePlatform.Android)
         {
             _rootPath = Application.persistentDataPath;
-
             switch (NumberHighlight.hotspotNumber)
             {
                 case 0:
@@ -172,10 +171,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                     nextHotspotLoadIcon.SetActive(false);
                     break;
             }
-
-
         }
-
     }
     public void Switch360ConsequencesImages()
     {
