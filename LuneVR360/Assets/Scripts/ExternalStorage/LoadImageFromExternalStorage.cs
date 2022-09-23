@@ -74,49 +74,6 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         return null;
     }
 
-    public void Switch360ImagesManually()
-    {
-        if (Application.platform == RuntimePlatform.Android)
-        {
-            _rootPath = Application.persistentDataPath;
-
-            switch (NumberHighlight.hotspotNumber)
-            {
-                case 0:
-                    SetTexture(route2Hostpot1Bad);
-                    StartCoroutine(PlayVoiceovers("BD-HotSpot2"));
-                    break;
-                case 1:
-                    SetTexture(route3Hostpot1Bad);
-                    StartCoroutine(PlayVoiceovers("BD-HotSpot3"));
-                    break;
-                case 2:
-                    SetTexture(route4Hostpot1Bad);
-                    StartCoroutine(PlayVoiceovers("BD-HotSpot4"));
-                    break;
-                case 3:
-                    SetTexture(route5Hostpot1Bad);
-                    StartCoroutine(PlayVoiceovers("BD-HotSpot5"));
-                    break;
-                case 4:
-                    SetTexture(route6Hostpot1Bad);
-                    StartCoroutine(PlayVoiceovers("BD-HotSpot6"));
-                    break;
-                case 5:
-                    SetTexture(route7Hostpot1Bad);
-                    StartCoroutine(PlayVoiceovers("BD-HotSpot7"));
-                    break;
-                case 6:
-                    SetTexture(route8Hostpot1Bad);
-                    StartCoroutine(PlayVoiceovers("BD-HotSpot8"));
-                    break;
-                case 7:
-                    SetTexture(route8Hostpot1Bad);
-                    StartCoroutine(PlayVoiceovers("BD-HotSpot9"));
-                    break;
-            }
-        }
-    }
     public void Switch360Images()
     {
         if (Application.platform == RuntimePlatform.Android)
@@ -165,7 +122,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                     nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
                     break;
                 case 8:
-                    SetTexture(route8Hostpot1Bad);
+                    SetTexture(route9Hostpot1Bad);
                     StartCoroutine(PlayVoiceovers("BD-HotSpot9"));
                     nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
                     nextHotspotLoadIcon.SetActive(false);

@@ -3735,7 +3735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &425997709
 Transform:
   m_ObjectHideFlags: 0
@@ -8078,6 +8078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  audioSource: {fileID: 2105912329}
   initialControllerInput: {fileID: 269475187}
   sceneToggleButton: {fileID: 633437013}
   hotspotSwitchButton: {fileID: 633437010}
