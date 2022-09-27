@@ -7427,7 +7427,7 @@ MonoBehaviour:
   panel3: {fileID: 24608406}
   panel4: {fileID: 913143823}
   panel5: {fileID: 2102879861}
-  panel6: {fileID: 203950844}
+  panel6: {fileID: 0}
   panel7: {fileID: 1575236796}
   isPanel2Enabled: 0
   isPanel3Enabled: 0

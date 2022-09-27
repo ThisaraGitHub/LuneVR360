@@ -36,13 +36,14 @@ namespace Lune.VR360
         // Update is called once per frame
         void Update()
         {
+            //&&
+            //  !screenManager.isPanel3Enabled &&
+            //  !screenManager.isPanel4Enabled &&
+            //  !screenManager.isPanel5Enabled &&
+            //  !screenManager.isPanel6Enabled &&
+            //  !screenManager.isPanel7Enabled
 
-            if (!screenManager.isPanel2Enabled &&
-              !screenManager.isPanel3Enabled &&
-              !screenManager.isPanel4Enabled &&
-              !screenManager.isPanel5Enabled &&
-              !screenManager.isPanel6Enabled &&
-              !screenManager.isPanel7Enabled)
+            if (!screenManager.isPanel2Enabled)
             {
                 //if (Input.GetKeyDown("space"))
                 if (OVRInput.Get(OVRInput.Button.One))
@@ -50,7 +51,8 @@ namespace Lune.VR360
                     if (!onetime)
                     {
                         Debug.Log("A button pressed");
-                        screenManager.ControllerUI(false);
+                        //screenManager.ControllerUI(false);
+                        animCanvas.Play("Panel-1-OUT");
                         //screenManager.TittleScreenUI(true);
                         //modGodspeed = true;
                         Invoke("ActivatePanel2", 1.5f);
@@ -72,12 +74,13 @@ namespace Lune.VR360
                         print("Off");
                         if (!screenManager.isPanel7Enabled)
                         {
-                            //canvasObject.SetActive(true);
+                            canvasObject.SetActive(true);
                             animCanvas.Play("AllPanaleEnable");
                         }
                         else
                         {
-                            vRImageSelection.Screen7ActiveStatus(false);
+                            // vRImageSelection.Screen7ActiveStatus(false);
+                            //animCanvas.Play("AllPanaleDisable");
                         }
 
                         this.modGodspeed = false;
@@ -88,12 +91,14 @@ namespace Lune.VR360
                         print("On");
                         if (!screenManager.isPanel7Enabled)
                         {
-                            //canvasObject.SetActive(false);
-                            animCanvas.Play("AllPanaleDisable"); 
+                            canvasObject.SetActive(false);
+                            animCanvas.Play("AllPanaleDisable");
+                            //StartCoroutine(PanelActiveState());
                         }
                         else
                         {
-                            vRImageSelection.Screen7ActiveStatus(true);
+                            //vRImageSelection.Screen7ActiveStatus(true);
+                            // animCanvas.Play("AllPanaleEnable");
                         }
                         this.modGodspeed = true;
                     }
@@ -103,6 +108,12 @@ namespace Lune.VR360
 
         }
 
+        IEnumerator PanelActiveState()
+        {
+            yield return new WaitForSeconds(.8f);
+            canvasObject.SetActive(false);
+
+        }
         private void ActivatePanel2()
         {
             screenManager.TittleScreenUI(true);
