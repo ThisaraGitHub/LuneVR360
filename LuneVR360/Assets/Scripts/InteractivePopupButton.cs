@@ -29,6 +29,7 @@ namespace Evereal.VRVideoPlayer
         public ScreenManager screenManager;
         public int indexNumber;
 
+        public VRImageSelection vrImageSelection;
         // Start is called before the first frame update
         void Start()
         {
@@ -75,7 +76,7 @@ namespace Evereal.VRVideoPlayer
                     animCanvas.Play("Panel-2-IN");
                     break;
                 case 2:
-                    
+
                     animCanvas.Play("Panel-2-OUT");
                     StartCoroutine(ActivateScreen("Panel3"));
                     break;
@@ -102,22 +103,27 @@ namespace Evereal.VRVideoPlayer
             switch (screenBumber)
             {
                 case 3:
+                    vrImageSelection.isScreen7Enabled = false;
                     animCanvas.Play("Panel-3-OUT");
                     StartCoroutine(BackScreenActivation(3));
                     break;
                 case 4:
+                    vrImageSelection.isScreen7Enabled = false;
                     animCanvas.Play("Panel-4-OUT");
                     StartCoroutine(BackScreenActivation(4));
                     break;
                 case 5:
+                    vrImageSelection.isScreen7Enabled = false;
                     animCanvas.Play("Panel-5-OUT");
                     StartCoroutine(BackScreenActivation(5));
                     break;
                 case 6:
+                    vrImageSelection.isScreen7Enabled = false;
                     animCanvas.Play("Panel-6-OUT");
                     StartCoroutine(BackScreenActivation(6));
                     break;
                 case 7:
+                    vrImageSelection.isScreen7Enabled = false;
                     animCanvas.Play("Panel-7-OUT");
                     StartCoroutine(BackScreenActivation(7));
                     break;
@@ -135,6 +141,7 @@ namespace Evereal.VRVideoPlayer
                     if (!panel3.activeSelf)
                     {
                         panel3.SetActive(true);
+                        vrImageSelection.isScreen7Enabled = false;
                     }
                     animCanvas.Play("Panel-3-IN");
                     break;
@@ -143,6 +150,7 @@ namespace Evereal.VRVideoPlayer
                     if (!panel4.activeSelf)
                     {
                         panel4.SetActive(true);
+                        vrImageSelection.isScreen7Enabled = false;
                     }
                     animCanvas.Play("Panel-4-IN");
                     break;
@@ -151,6 +159,7 @@ namespace Evereal.VRVideoPlayer
                     if (!panel5.activeSelf)
                     {
                         panel5.SetActive(true);
+                        vrImageSelection.isScreen7Enabled = false;
                     }
                     animCanvas.Play("Panel-5-IN");
                     break;
@@ -159,6 +168,7 @@ namespace Evereal.VRVideoPlayer
                     if (!panel6.activeSelf)
                     {
                         panel6.SetActive(true);
+                        vrImageSelection.isScreen7Enabled = false;
                     }
                     animCanvas.Play("Panel-6-IN");
                     break;
@@ -167,6 +177,7 @@ namespace Evereal.VRVideoPlayer
                     if (!panel7.activeSelf)
                     {
                         panel7.SetActive(true);
+                        vrImageSelection.isScreen7Enabled = true;
                     }
                     animCanvas.Play("Panel-7-IN");
                     break;

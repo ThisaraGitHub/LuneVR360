@@ -22,6 +22,7 @@ namespace Evereal.VRVideoPlayer
         public LoadImageFromExternalStorage loadImageFromExternalStorage;
         public GameObject screen7;
         Animator screen7Animator;
+        public bool isScreen7Enabled = false;
         // Start is called before the first frame update
         void Start()
         {
@@ -46,7 +47,7 @@ namespace Evereal.VRVideoPlayer
                 voiceoverPlay.StopVoicePlay();
                 StartCoroutine(WaitandFadeIn());
                 Screen7ActiveStatus(false);
-               
+
             }
         }
 
@@ -57,6 +58,7 @@ namespace Evereal.VRVideoPlayer
         IEnumerator WaitandFadeIn()
         {
             yield return new WaitForSeconds(2);
+            isScreen7Enabled = true;
             audioSource.SetActive(true);
             initialControllerInput.modGodspeed = true;
             sceneToggleButton.isToggle = false;

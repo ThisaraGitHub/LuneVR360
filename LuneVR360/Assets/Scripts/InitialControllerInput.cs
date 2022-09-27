@@ -8,7 +8,7 @@ namespace Lune.VR360
 {
     public class InitialControllerInput : MonoBehaviour
     {
-
+        public InteractivePopupButton interactivePopupButton;
         public GameObject animatorCanvas;
         private Animator animCanvas;
 
@@ -46,7 +46,7 @@ namespace Lune.VR360
             if (!screenManager.isPanel2Enabled)
             {
                 //if (Input.GetKeyDown("space"))
-                if (OVRInput.Get(OVRInput.Button.One))
+                if (OVRInput.Get(OVRInput.Button.One) )
                 {
                     if (!onetime)
                     {
@@ -65,7 +65,7 @@ namespace Lune.VR360
 
             if (screenManager.isPanel2Enabled)
             {
-                if (OVRInput.GetDown(OVRInput.Button.One))
+                if (OVRInput.GetDown(OVRInput.Button.One) && vRImageSelection.isScreen7Enabled)
                 {
 
                     if (this.modGodspeed)

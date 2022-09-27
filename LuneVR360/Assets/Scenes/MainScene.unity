@@ -629,6 +629,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 4
+  vrImageSelection: {fileID: 1034761333}
 --- !u!114 &50032030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2729,6 +2730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71767a5a47c0b59408196f1250297812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactivePopupButton: {fileID: 1595180914}
   animatorCanvas: {fileID: 2087292029}
   panel1: {fileID: 1418563896}
   canvasObject: {fileID: 2087292029}
@@ -3715,7 +3717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &425997709
 Transform:
   m_ObjectHideFlags: 0
@@ -4303,6 +4305,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 0
+  vrImageSelection: {fileID: 1034761333}
 --- !u!114 &537643038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4603,6 +4606,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 2
+  vrImageSelection: {fileID: 1034761333}
 --- !u!1 &585680638
 GameObject:
   m_ObjectHideFlags: 0
@@ -4670,6 +4674,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 3
+  vrImageSelection: {fileID: 1034761333}
 --- !u!114 &585680641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7753,6 +7758,7 @@ MonoBehaviour:
   screenManager: {fileID: 913648315}
   loadImageFromExternalStorage: {fileID: 1689832973}
   screen7: {fileID: 1575236796}
+  isScreen7Enabled: 0
 --- !u!1 &1044660098
 GameObject:
   m_ObjectHideFlags: 0
@@ -7900,6 +7906,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 2
+  vrImageSelection: {fileID: 1034761333}
 --- !u!114 &1047962869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8236,6 +8243,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 5
+  vrImageSelection: {fileID: 1034761333}
 --- !u!1 &1070579874
 GameObject:
   m_ObjectHideFlags: 0
@@ -10449,6 +10457,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 1
+  vrImageSelection: {fileID: 1034761333}
 --- !u!114 &1409138533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11087,6 +11096,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 5
+  vrImageSelection: {fileID: 1034761333}
 --- !u!114 &1480122727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11967,6 +11977,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 6
+  vrImageSelection: {fileID: 1034761333}
 --- !u!1 &1600463165
 GameObject:
   m_ObjectHideFlags: 0
@@ -12326,6 +12337,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 4
+  vrImageSelection: {fileID: 1034761333}
 --- !u!1 &1686647493
 GameObject:
   m_ObjectHideFlags: 0
@@ -14897,6 +14909,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 3
+  vrImageSelection: {fileID: 1034761333}
 --- !u!1 &2058406483
 GameObject:
   m_ObjectHideFlags: 0
