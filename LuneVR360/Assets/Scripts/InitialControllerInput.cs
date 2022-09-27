@@ -8,6 +8,8 @@ namespace Lune.VR360
 {
     public class InitialControllerInput : MonoBehaviour
     {
+        public GameObject panel1;
+
         public GameObject canvasObject;
         public ScreenManager screenManager;
         public VRImageSelection vRImageSelection;
@@ -21,7 +23,7 @@ namespace Lune.VR360
         // Start is called before the first frame update
         void Start()
         {
-            screenManager.ControllerUI(true);
+            //  screenManager.ControllerUI(true);
             time = 0;
             delayedTime = 3;
         }
@@ -29,10 +31,6 @@ namespace Lune.VR360
         // Update is called once per frame
         void Update()
         {
-            //if (OVRInput.GetDown(OVRInput.Button.One))
-            //{
-            //    
-            //}
 
             if (!screenManager.isPanel2Enabled &&
               !screenManager.isPanel3Enabled &&
@@ -41,13 +39,15 @@ namespace Lune.VR360
               !screenManager.isPanel6Enabled &&
               !screenManager.isPanel7Enabled)
             {
+                //if (Input.GetKeyDown("space"))
                 if (OVRInput.Get(OVRInput.Button.One))
                 {
                     if (!onetime)
                     {
                         Debug.Log("A button pressed");
                         screenManager.ControllerUI(false);
-                        screenManager.TittleScreenUI(true);
+                        modGodspeed = true;
+                        Invoke("ActivatePanel2", 1.5f);
                         onetime = true;
                     }
                 }
@@ -83,7 +83,7 @@ namespace Lune.VR360
                         {
                             canvasObject.SetActive(false);
                         }
-                        else 
+                        else
                         {
                             vRImageSelection.Screen7ActiveStatus(true);
                         }
@@ -92,26 +92,13 @@ namespace Lune.VR360
                 }
             }
 
-            //if (screenManager.isPanel7Enabled && !this.modGodspeed)
-            //{
-            //    vRImageSelection.Screen7ActiveStatus(true);
-            //}
-            //else if (screenManager.isPanel7Enabled && this.modGodspeed)
-            //{
-            //    vRImageSelection.Screen7ActiveStatus(false);
-            //}
 
-            //if (onetime &&
-            //       screenManager.isPanel2OpnedOnce &&
-            //       screenManager.isPanel3OpnedOnce &&
-            //       screenManager.isPanel4OpnedOnce &&
-            //       screenManager.isPanel5OpnedOnce &&
-            //       screenManager.isPanel6OpnedOnce &&
-            //       screenManager.isPanel7OpnedOnce &&
-            //       OVRInput.GetDown(OVRInput.Button.One))
-            //{
-            //    vRImageSelection.Screen7ActiveStatus(true);
-            //}
+        }
+
+        private void ActivatePanel2()
+        {
+            screenManager.TittleScreenUI(true);
+            panel1.SetActive(false);
         }
     }
 }

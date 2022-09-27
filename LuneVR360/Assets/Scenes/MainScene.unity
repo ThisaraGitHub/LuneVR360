@@ -607,6 +607,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 4
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!114 &50032030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,6 +1335,7 @@ GameObject:
   - component: {fileID: 118106654}
   - component: {fileID: 118106653}
   - component: {fileID: 118106652}
+  - component: {fileID: 118106655}
   m_Layer: 5
   m_Name: Hotspot-Panel
   m_TagString: Untagged
@@ -1419,6 +1428,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118106650}
   m_CullTransparentMesh: 1
+--- !u!225 &118106655
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118106650}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &120425573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,6 +2785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71767a5a47c0b59408196f1250297812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel1: {fileID: 1418563896}
   canvasObject: {fileID: 2087292029}
   screenManager: {fileID: 913648315}
   vRImageSelection: {fileID: 1034761333}
@@ -3735,7 +3757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &425997709
 Transform:
   m_ObjectHideFlags: 0
@@ -4314,6 +4336,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 0
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!114 &537643038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4701,6 +4731,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 2
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!82 &583791283
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4855,6 +4893,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 3
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!114 &585680641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7287,6 +7333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada8fbf0654ed374cbf09869ae39f0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animatorCanvas: {fileID: 2087292029}
   menuPopupSound: {fileID: 913648316}
   panel1: {fileID: 1418563896}
   panel2: {fileID: 1322916456}
@@ -8227,6 +8274,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 2
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!114 &1047962869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8650,6 +8705,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 5
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!82 &1069974276
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10648,6 +10711,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 1
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!114 &1409138533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11373,6 +11444,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 5
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!114 &1480122727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12361,6 +12440,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 6
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!82 &1595180915
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12794,6 +12881,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 4
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!82 &1686620780
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15451,6 +15546,14 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 3
+  animatorCanvas: {fileID: 2087292029}
+  panel1: {fileID: 1418563896}
+  panel2: {fileID: 1322916456}
+  panel3: {fileID: 24608406}
+  panel4: {fileID: 913143823}
+  panel5: {fileID: 2102879861}
+  panel6: {fileID: 203950844}
+  panel7: {fileID: 1575236796}
 --- !u!82 &2050303826
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15914,6 +16017,7 @@ GameObject:
   - component: {fileID: 2087292031}
   - component: {fileID: 2087292030}
   - component: {fileID: 2087292034}
+  - component: {fileID: 2087292035}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -16027,6 +16131,26 @@ MonoBehaviour:
   m_RotateWithCamera: 1
   m_FollowSpeed: 10
   m_DistanceFromCamera: 0
+--- !u!95 &2087292035
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087292029}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef37417ed27a3fb409638f24eadf4872, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2102879861
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ namespace Lune.VR360
 {
     public class ScreenManager : MonoBehaviour
     {
+        public GameObject animatorCanvas;
+        private Animator animCanvas;
         public AudioSource menuPopupSound;
 
         public GameObject panel1;
@@ -33,7 +35,9 @@ namespace Lune.VR360
         // Start is called before the first frame update
         void Start()
         {
-
+            animCanvas = animatorCanvas.GetComponent<Animator>();
+            ControllerUI(true);
+            //TittleScreenUI(false);
         }
 
         // Update is called once per frame
@@ -46,25 +50,36 @@ namespace Lune.VR360
         {
             if (ActiveStatus)
             {
-                panel1.SetActive(true);
+                if (!panel1.activeSelf)
+                {
+                    panel1.SetActive(true);
+                }
+                animCanvas.Play("Panel-1-IN");
             }
             else
             {
-                panel1.SetActive(false);
+                animCanvas.Play("Panel-1-OUT");
+                // panel1.SetActive(false);
             }
         }
         public void TittleScreenUI(bool ActiveStatus)
         {
             if (ActiveStatus)
             {
-                panel2.SetActive(true);
+                //panel2.SetActive(true);
+                if (!panel2.activeSelf)
+                {
+                    panel2.SetActive(true);
+                }
+                animCanvas.Play("Panel-2-IN");
                 isPanel2Enabled = true;
                 isPanel2OpnedOnce = true;
                 StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
-                panel2.SetActive(false);
+                // panel2.SetActive(false);
+                animCanvas.Play("Panel-1-OUT");
                 isPanel2Enabled = false;
             }
 
@@ -73,14 +88,19 @@ namespace Lune.VR360
         {
             if (ActiveStatus)
             {
-                panel3.SetActive(true);
+                if (!panel3.activeSelf)
+                {
+                    panel3.SetActive(true);
+                }
+                animCanvas.Play("Panel-3-IN");
                 isPanel3Enabled = true;
                 isPanel3OpnedOnce = true;
                 StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
-                panel3.SetActive(false);
+                animCanvas.Play("Panel-3-OUT");
+                //panel3.SetActive(false);
                 isPanel3Enabled = false;
             }
         }
