@@ -116,6 +116,7 @@ namespace Lune.VR360
         }
         private void ActivatePanel2()
         {
+            screenManager.MenuAudioPlay();
             screenManager.TittleScreenUI(true);
             panel1.SetActive(false);
         }

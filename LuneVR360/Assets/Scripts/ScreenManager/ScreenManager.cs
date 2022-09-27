@@ -54,6 +54,7 @@ namespace Lune.VR360
                 {
                     panel1.SetActive(true);
                 }
+                MenuAudioPlay();
                 animCanvas.Play("Panel-1-IN");
             }
             else
@@ -74,7 +75,7 @@ namespace Lune.VR360
                 animCanvas.Play("Panel-2-IN");
                 isPanel2Enabled = true;
                 isPanel2OpnedOnce = true;
-                StartCoroutine(WaitandPlayAudio("Menu"));
+                //StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -95,7 +96,7 @@ namespace Lune.VR360
                 animCanvas.Play("Panel-3-IN");
                 isPanel3Enabled = true;
                 isPanel3OpnedOnce = true;
-                StartCoroutine(WaitandPlayAudio("Menu"));
+               // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -111,7 +112,7 @@ namespace Lune.VR360
                 panel4.SetActive(true);
                 isPanel4Enabled = true;
                 isPanel4OpnedOnce = true;
-                StartCoroutine(WaitandPlayAudio("Menu"));
+               // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -126,7 +127,7 @@ namespace Lune.VR360
                 panel5.SetActive(true);
                 isPanel5Enabled = true;
                 isPanel5OpnedOnce = true;
-                StartCoroutine(WaitandPlayAudio("Menu"));
+               // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -141,7 +142,7 @@ namespace Lune.VR360
                 panel6.SetActive(true);
                 isPanel6Enabled = true;
                 isPanel6OpnedOnce = true;
-                StartCoroutine(WaitandPlayAudio("Menu"));
+               // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -156,7 +157,7 @@ namespace Lune.VR360
                 panel7.SetActive(true);
                 isPanel7Enabled = true;
                 isPanel7OpnedOnce = true;
-                StartCoroutine(WaitandPlayAudio("Menu"));
+               // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -166,15 +167,9 @@ namespace Lune.VR360
         }
 
 
-        public IEnumerator WaitandPlayAudio(string type)
+        public void MenuAudioPlay() 
         {
-            switch (type)
-            {
-                case "Menu":
-                    yield return new WaitForSeconds(0f);
-                    menuPopupSound.Play();
-                    break;
-            }
+            menuPopupSound.Play();
         }
     }
 }

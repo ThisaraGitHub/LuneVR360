@@ -11,14 +11,11 @@ namespace Evereal.VRVideoPlayer
         public bool isBackButton = false;
         public int screenBumber;
 
-        public InitialControllerInput initialControllerInput;
-        public ScreenManager screenManager;
-        public int indexNumber;
-
-
+        [Header("Main Canvas References")]
         public GameObject animatorCanvas;
         private Animator animCanvas;
 
+        [Header("Screens References")]
         public GameObject panel1;
         public GameObject panel2;
         public GameObject panel3;
@@ -26,6 +23,11 @@ namespace Evereal.VRVideoPlayer
         public GameObject panel5;
         public GameObject panel6;
         public GameObject panel7;
+
+        [Header("Other References")]
+        public InitialControllerInput initialControllerInput;
+        public ScreenManager screenManager;
+        public int indexNumber;
 
         // Start is called before the first frame update
         void Start()
@@ -42,8 +44,6 @@ namespace Evereal.VRVideoPlayer
         protected override void OnClick()
         {
             initialControllerInput.modGodspeed = false;
-
-
             if (isBackButton)
             {
                 BackButton();
@@ -73,6 +73,7 @@ namespace Evereal.VRVideoPlayer
                     animCanvas.Play("Panel-2-IN");
                     break;
                 case 2:
+                    
                     animCanvas.Play("Panel-2-OUT");
                     StartCoroutine(ActivateScreen("Panel3"));
                     break;
@@ -124,6 +125,7 @@ namespace Evereal.VRVideoPlayer
         IEnumerator ActivateScreen(string name)
         {
             yield return new WaitForSeconds(1.5f);
+            screenManager.MenuAudioPlay();
             switch (name)
             {
                 case "Panel3":
