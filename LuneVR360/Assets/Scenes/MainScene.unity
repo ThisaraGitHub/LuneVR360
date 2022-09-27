@@ -8225,6 +8225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  animatorCanvas: {fileID: 2087292029}
   audioSource: {fileID: 2105912329}
   initialControllerInput: {fileID: 269475187}
   sceneToggleButton: {fileID: 633437013}

@@ -7,6 +7,9 @@ namespace Evereal.VRVideoPlayer
 {
     public class VRImageSelection : ButtonBase
     {
+        public GameObject animatorCanvas;
+        private Animator animCanvas;
+
         public GameObject audioSource;
         public InitialControllerInput initialControllerInput;
         public SceneToggleButton sceneToggleButton;
@@ -25,6 +28,7 @@ namespace Evereal.VRVideoPlayer
             screen7Animator = screen7.GetComponent<Animator>();
             hotspotSwitchButton.SetActive(false);
             hotspotLoadManualButton.SetActive(false);
+            animCanvas = animatorCanvas.GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -64,14 +68,16 @@ namespace Evereal.VRVideoPlayer
 
         public void Screen7ActiveStatus(bool status)
         {
-            if (status)
+            if (!status)
             {
-                screen7Animator.SetInteger("Anim", 0);
+                //screen7Animator.SetInteger("Anim", 0);
+                animCanvas.Play("AllPanaleDisable");
             }
-            else
-            {
-                screen7Animator.SetInteger("Anim", 1);
-            }
+            //else
+            //{
+            //    //screen7Animator.SetInteger("Anim", 1);
+            //    animCanvas.Play("Panel-7-IN");
+            //}
         }
     }
 }
