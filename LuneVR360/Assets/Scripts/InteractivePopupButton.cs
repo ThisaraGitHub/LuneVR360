@@ -47,9 +47,11 @@ namespace Evereal.VRVideoPlayer
             if (isBackButton)
             {
                 BackButton();
+                screenManager.ClickAudioPlay();
             }
             else
             {
+                screenManager.ClickAudioPlay();
                 NextButton();
             }
         }

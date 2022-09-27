@@ -9,6 +9,7 @@ namespace Lune.VR360
         public GameObject animatorCanvas;
         private Animator animCanvas;
         public AudioSource menuPopupSound;
+        public AudioSource menuClickSound;
 
         public GameObject panel1;
         public GameObject panel2;
@@ -170,6 +171,10 @@ namespace Lune.VR360
         public void MenuAudioPlay() 
         {
             menuPopupSound.Play();
+        }
+        public void ClickAudioPlay()
+        {
+            menuClickSound.Play();
         }
     }
 }
