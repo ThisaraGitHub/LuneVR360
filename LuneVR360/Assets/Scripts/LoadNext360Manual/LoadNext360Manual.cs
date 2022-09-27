@@ -1,3 +1,4 @@
+using Lune.VR360;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ namespace Evereal.VRVideoPlayer
 {
     public class LoadNext360Manual : ButtonBase
     {
+        public ScreenManager screenManager;
         public VoiceoverPlay voiceoverPlay;
         public Fade fade;
         public VRImageSelection vRImageSelection;
@@ -28,6 +30,7 @@ namespace Evereal.VRVideoPlayer
                 StartCoroutine(fade.StartFadeOut());
                 StartCoroutine(WaitandLoad());
             }
+            screenManager.ClickAudioPlay();
 
         }
 
