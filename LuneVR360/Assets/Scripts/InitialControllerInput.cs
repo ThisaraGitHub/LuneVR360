@@ -8,6 +8,10 @@ namespace Lune.VR360
 {
     public class InitialControllerInput : MonoBehaviour
     {
+
+        public GameObject animatorCanvas;
+        private Animator animCanvas;
+
         public GameObject panel1;
 
         public GameObject canvasObject;
@@ -24,6 +28,7 @@ namespace Lune.VR360
         void Start()
         {
             //  screenManager.ControllerUI(true);
+            animCanvas = animatorCanvas.GetComponent<Animator>();
             time = 0;
             delayedTime = 3;
         }
@@ -46,7 +51,8 @@ namespace Lune.VR360
                     {
                         Debug.Log("A button pressed");
                         screenManager.ControllerUI(false);
-                        modGodspeed = true;
+                        //screenManager.TittleScreenUI(true);
+                        //modGodspeed = true;
                         Invoke("ActivatePanel2", 1.5f);
                         onetime = true;
                     }
@@ -55,7 +61,7 @@ namespace Lune.VR360
 
             }
 
-            if (!screenManager.isPanel2Enabled)
+            if (screenManager.isPanel2Enabled)
             {
                 if (OVRInput.GetDown(OVRInput.Button.One))
                 {
@@ -66,7 +72,8 @@ namespace Lune.VR360
                         print("Off");
                         if (!screenManager.isPanel7Enabled)
                         {
-                            canvasObject.SetActive(true);
+                            //canvasObject.SetActive(true);
+                            animCanvas.Play("AllPanaleEnable");
                         }
                         else
                         {
@@ -81,7 +88,8 @@ namespace Lune.VR360
                         print("On");
                         if (!screenManager.isPanel7Enabled)
                         {
-                            canvasObject.SetActive(false);
+                            //canvasObject.SetActive(false);
+                            animCanvas.Play("AllPanaleDisable"); 
                         }
                         else
                         {

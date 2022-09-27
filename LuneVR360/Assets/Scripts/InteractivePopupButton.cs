@@ -43,13 +43,6 @@ namespace Evereal.VRVideoPlayer
             switch (indexNumber)
             {
                 case 0:
-                    //screenManager.ControllerUI(true);
-                    //screenManager.TittleScreenUI(false);
-                    //screenManager.AboutTheApp(false);
-                    //screenManager.ControlButtonsDescription(false);
-                    //screenManager.CitySelection(false);
-                    //screenManager.PathSelection(false);
-                    //screenManager.HotspotSelection(false);
                     if (!panel1.activeSelf)
                     {
                         panel1.SetActive(true);
@@ -57,13 +50,6 @@ namespace Evereal.VRVideoPlayer
                     animCanvas.Play("Panel-1-IN");
                     break;
                 case 1:
-                    //screenManager.ControllerUI(false);
-                    //screenManager.TittleScreenUI(true);
-                    //screenManager.AboutTheApp(false);
-                    //screenManager.ControlButtonsDescription(false);
-                    //screenManager.CitySelection(false);
-                    //screenManager.PathSelection(false);
-                    //screenManager.HotspotSelection(false);
                     if (!panel2.activeSelf)
                     {
                         panel2.SetActive(true);
@@ -71,58 +57,22 @@ namespace Evereal.VRVideoPlayer
                     animCanvas.Play("Panel-2-IN");
                     break;
                 case 2:
-                    //screenManager.ControllerUI(false);
-                    //screenManager.TittleScreenUI(false);
-                    //screenManager.ControlButtonsDescription(false);
-                    //screenManager.CitySelection(false);
-                    //screenManager.PathSelection(false);
-                    //screenManager.HotspotSelection(false);
                     animCanvas.Play("Panel-2-OUT");
                     StartCoroutine(ActivateScreen("Panel3"));
-                   
-
                     break;
                 case 3:
-                    //screenManager.ControllerUI(false);
-                    //screenManager.TittleScreenUI(false);
-                    //screenManager.AboutTheApp(false);
-                    //screenManager.ControlButtonsDescription(true);
-                    //screenManager.CitySelection(false);
-                    //screenManager.PathSelection(false);
-                    //screenManager.HotspotSelection(false);
                     animCanvas.Play("Panel-3-OUT");
                     StartCoroutine(ActivateScreen("Panel4"));
                     break;
                 case 4:
-                    //screenManager.ControllerUI(false);
-                    //screenManager.TittleScreenUI(false);
-                    //screenManager.AboutTheApp(false);
-                    //screenManager.ControlButtonsDescription(false);
-                    //screenManager.CitySelection(true);
-                    //screenManager.PathSelection(false);
-                    //screenManager.HotspotSelection(false);
                     animCanvas.Play("Panel-4-OUT");
                     StartCoroutine(ActivateScreen("Panel5"));
                     break;
                 case 5:
-                    //screenManager.ControllerUI(false);
-                    //screenManager.TittleScreenUI(false);
-                    //screenManager.AboutTheApp(false);
-                    //screenManager.ControlButtonsDescription(false);
-                    //screenManager.CitySelection(false);
-                    //screenManager.PathSelection(true);
-                    //screenManager.HotspotSelection(false);
                     animCanvas.Play("Panel-5-OUT");
                     StartCoroutine(ActivateScreen("Panel6"));
                     break;
                 case 6:
-                    //screenManager.ControllerUI(false);
-                    //screenManager.TittleScreenUI(false);
-                    //screenManager.AboutTheApp(false);
-                    //screenManager.ControlButtonsDescription(false);
-                    //screenManager.CitySelection(false);
-                    //screenManager.PathSelection(false);
-                    //screenManager.HotspotSelection(true);
                     animCanvas.Play("Panel-6-OUT");
                     StartCoroutine(ActivateScreen("Panel7"));
                     break;

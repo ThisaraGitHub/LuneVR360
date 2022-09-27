@@ -2824,6 +2824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71767a5a47c0b59408196f1250297812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animatorCanvas: {fileID: 2087292029}
   panel1: {fileID: 1418563896}
   canvasObject: {fileID: 2087292029}
   screenManager: {fileID: 913648315}
@@ -16114,6 +16115,7 @@ GameObject:
   - component: {fileID: 2087292030}
   - component: {fileID: 2087292034}
   - component: {fileID: 2087292035}
+  - component: {fileID: 2087292036}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -16247,6 +16249,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &2087292036
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087292029}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2102879861
 GameObject:
   m_ObjectHideFlags: 0
