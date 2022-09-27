@@ -46,7 +46,7 @@ namespace Lune.VR360
             if (!screenManager.isPanel2Enabled)
             {
                 //if (Input.GetKeyDown("space"))
-                if (OVRInput.Get(OVRInput.Button.One) )
+                if (OVRInput.Get(OVRInput.Button.One))
                 {
                     if (!onetime)
                     {
@@ -65,6 +65,24 @@ namespace Lune.VR360
 
             if (screenManager.isPanel2Enabled)
             {
+                // I have limited the A button unitill user reaced to the hotspot selection
+                // There is a problem with a animations that when we disable the panel and enable it again the animation state is not playing propoerly 
+                // That is the reason I make this decision 
+
+                // You can check the issue in 2 places
+                // Place 1) if you comment  && vRImageSelection.isScreen7Enabled in below if statement and run the app till you reac the screen 6, which is the screen before the hotspot selection
+                // And then you press the A button and hide the panel
+                // Press A again to enable the panale again, and then navigate to the hostspot selection./ The previous screen animation is not closing and if you press the back button you will see screes are overlapping
+                // Those screens are handeling in the script called InteractivePopupButton
+
+                // Place 2)  if you navigate to the hotspot selection screen and navigate to randowm hotspot and press A button. 
+                // The panel will close and Press A again to activate
+                // Then click nex or previous button to select a hotspot
+                // You will see he previous animated number is no resting or it's stuck
+
+                // Those are the two points I need to disscuss with you to overcome
+                // Thank you 
+
                 if (OVRInput.GetDown(OVRInput.Button.One) && vRImageSelection.isScreen7Enabled)
                 {
 
