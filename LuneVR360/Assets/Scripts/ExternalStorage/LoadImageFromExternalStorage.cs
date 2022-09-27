@@ -11,7 +11,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     public GameObject nextHotspotLoadIcon;
 
     private MeshRenderer meshRenderer;
-    private string initial360Image = "test_texture.png";
+    private string initial360Image = "menu.png";
 
     private string route1Hostpot1Bad = "R1-H1-bad.png";
     private string route2Hostpot1Bad = "R1-H2-bad.png";
