@@ -94,31 +94,37 @@ namespace Evereal.VRVideoPlayer
                     StartCoroutine(ActivateScreen("Panel4"));
                     break;
                 case 4:
-                    screenManager.ControllerUI(false);
-                    screenManager.TittleScreenUI(false);
-                    screenManager.AboutTheApp(false);
-                    screenManager.ControlButtonsDescription(false);
-                    screenManager.CitySelection(true);
-                    screenManager.PathSelection(false);
-                    screenManager.HotspotSelection(false);
+                    //screenManager.ControllerUI(false);
+                    //screenManager.TittleScreenUI(false);
+                    //screenManager.AboutTheApp(false);
+                    //screenManager.ControlButtonsDescription(false);
+                    //screenManager.CitySelection(true);
+                    //screenManager.PathSelection(false);
+                    //screenManager.HotspotSelection(false);
+                    animCanvas.Play("Panel-4-OUT");
+                    StartCoroutine(ActivateScreen("Panel5"));
                     break;
                 case 5:
-                    screenManager.ControllerUI(false);
-                    screenManager.TittleScreenUI(false);
-                    screenManager.AboutTheApp(false);
-                    screenManager.ControlButtonsDescription(false);
-                    screenManager.CitySelection(false);
-                    screenManager.PathSelection(true);
-                    screenManager.HotspotSelection(false);
+                    //screenManager.ControllerUI(false);
+                    //screenManager.TittleScreenUI(false);
+                    //screenManager.AboutTheApp(false);
+                    //screenManager.ControlButtonsDescription(false);
+                    //screenManager.CitySelection(false);
+                    //screenManager.PathSelection(true);
+                    //screenManager.HotspotSelection(false);
+                    animCanvas.Play("Panel-5-OUT");
+                    StartCoroutine(ActivateScreen("Panel6"));
                     break;
                 case 6:
-                    screenManager.ControllerUI(false);
-                    screenManager.TittleScreenUI(false);
-                    screenManager.AboutTheApp(false);
-                    screenManager.ControlButtonsDescription(false);
-                    screenManager.CitySelection(false);
-                    screenManager.PathSelection(false);
-                    screenManager.HotspotSelection(true);
+                    //screenManager.ControllerUI(false);
+                    //screenManager.TittleScreenUI(false);
+                    //screenManager.AboutTheApp(false);
+                    //screenManager.ControlButtonsDescription(false);
+                    //screenManager.CitySelection(false);
+                    //screenManager.PathSelection(false);
+                    //screenManager.HotspotSelection(true);
+                    animCanvas.Play("Panel-6-OUT");
+                    StartCoroutine(ActivateScreen("Panel7"));
                     break;
             }
         }
@@ -143,6 +149,30 @@ namespace Evereal.VRVideoPlayer
                         panel4.SetActive(true);
                     }
                     animCanvas.Play("Panel-4-IN");
+                    break;
+                case "Panel5":
+                    panel4.SetActive(false);
+                    if (!panel5.activeSelf)
+                    {
+                        panel5.SetActive(true);
+                    }
+                    animCanvas.Play("Panel-5-IN");
+                    break;
+                case "Panel6":
+                    panel5.SetActive(false);
+                    if (!panel6.activeSelf)
+                    {
+                        panel6.SetActive(true);
+                    }
+                    animCanvas.Play("Panel-6-IN");
+                    break;
+                case "Panel7":
+                    panel6.SetActive(false);
+                    if (!panel7.activeSelf)
+                    {
+                        panel7.SetActive(true);
+                    }
+                    animCanvas.Play("Panel-7-IN");
                     break;
             }
         }
