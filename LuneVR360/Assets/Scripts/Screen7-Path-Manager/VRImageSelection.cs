@@ -46,6 +46,7 @@ namespace Evereal.VRVideoPlayer
                 voiceoverPlay.StopVoicePlay();
                 StartCoroutine(WaitandFadeIn());
                 Screen7ActiveStatus(false);
+               
             }
         }
 
@@ -57,7 +58,7 @@ namespace Evereal.VRVideoPlayer
         {
             yield return new WaitForSeconds(2);
             audioSource.SetActive(true);
-            initialControllerInput.modGodspeed = false;
+            initialControllerInput.modGodspeed = true;
             sceneToggleButton.isToggle = false;
             hotspotSwitchButton.SetActive(true);
             hotspotLoadManualButton.SetActive(true);
