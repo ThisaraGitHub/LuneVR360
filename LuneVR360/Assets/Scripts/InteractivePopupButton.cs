@@ -173,6 +173,7 @@ namespace Evereal.VRVideoPlayer
         IEnumerator BackScreenActivation(int screenNumber)
         {
             yield return new WaitForSeconds(1.5f);
+            screenManager.MenuAudioPlay();
             switch (screenNumber)
             {
                 case 3:
