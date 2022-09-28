@@ -133,7 +133,7 @@ namespace Evereal.VRVideoPlayer
 
         IEnumerator ActivateScreen(string name)
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1f);
             screenManager.MenuAudioPlay();
             switch (name)
             {
@@ -186,7 +186,7 @@ namespace Evereal.VRVideoPlayer
         }
         IEnumerator BackScreenActivation(int screenNumber)
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1f);
             screenManager.MenuAudioPlay();
             switch (screenNumber)
             {
