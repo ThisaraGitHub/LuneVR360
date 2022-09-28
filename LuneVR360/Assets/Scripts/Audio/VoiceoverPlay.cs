@@ -290,5 +290,10 @@ public class VoiceoverPlay : MonoBehaviour
         BD_P1_CONS_HotSpot7_Played = false;
         BD_P1_CONS_HotSpot8_Played = false;
         BD_P1_CONS_HotSpot9_Played = false;
+
+        BD_P2_CONS_HotSpot1_Played = false;
+        BD_P2_CONS_HotSpot2_Played = false;
+        BD_P2_CONS_HotSpot3_Played = false;
+        BD_P2_CONS_HotSpot4_Played = false;
     }
 }
