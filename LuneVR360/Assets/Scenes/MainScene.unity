@@ -12850,6 +12850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99426624077e77d4eaaf949642276860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screen5ContentManager: {fileID: 2102879865}
+  screen6ContentManager: {fileID: 203950848}
   nextHotspotIcon: {fileID: 236992218}
   voiceoverPlay: {fileID: 2105912330}
   nextHotspotLoadIcon: {fileID: 1952948866}
