@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Screen7PathManager : MonoBehaviour
 {
+    /// <summary>
+    /// This script manage the images for screen 7 based on the selected path
+    /// </summary>
     public ContentManager screen5ContentManager;
     public ContentManager screen6ContentManager;
 
@@ -19,28 +22,23 @@ public class Screen7PathManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (screen5ContentManager.panelNumber == 5 && screen5ContentManager.carouselView.GetCurrentItem() == 0 && 
-            screen6ContentManager.panelNumber == 6 && screen6ContentManager.carouselView.GetCurrentItem() == 0 )
+        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
         {
             badCityPath1Object.SetActive(true);
             badCityPath2Object.SetActive(false);
             badCityPath3Object.SetActive(false);
         }
-        else if (screen5ContentManager.panelNumber == 5 && screen5ContentManager.carouselView.GetCurrentItem() == 0 &&
-            screen6ContentManager.panelNumber == 6 && screen6ContentManager.carouselView.GetCurrentItem() == 1)
+        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
         {
             badCityPath1Object.SetActive(false);
             badCityPath2Object.SetActive(true);
             badCityPath3Object.SetActive(false);
         }
-        else if (screen5ContentManager.panelNumber == 5 && screen5ContentManager.carouselView.GetCurrentItem() == 0 &&
-           screen6ContentManager.panelNumber == 6 && screen6ContentManager.carouselView.GetCurrentItem() == 2)
+        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
         {
             badCityPath1Object.SetActive(false);
             badCityPath2Object.SetActive(false);
             badCityPath3Object.SetActive(true);
         }
-
-
     }
 }

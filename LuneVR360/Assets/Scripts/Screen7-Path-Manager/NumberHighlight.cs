@@ -7,19 +7,26 @@ namespace Evereal.VRVideoPlayer
 {
     public class NumberHighlight : ButtonBase
     {
+        public ContentManager screen5ContentManager;
+        public ContentManager screen6ContentManager;
+
         public Text hotspotNumberText;
         public bool isNumberIncreasing = false;
         public static int hotspotNumber = 0;
 
         public GameObject numberAnimationContainer;
         [SerializeField] public Animator numberAnimator;
+
+        public GameObject badCityPath2NumberAnimationContainer;
+        [SerializeField] public Animator badCityPath2NumberAnimator;
+
+        public Screen7PathManager screen7PathManager;
+
         // Start is called before the first frame update
         void Start()
         {
             numberAnimator = numberAnimationContainer.GetComponent<Animator>();
-            //numberAnimator.keepAnimatorControllerStateOnDisable = true;
-
-
+            badCityPath2NumberAnimator = badCityPath2NumberAnimationContainer.GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -29,63 +36,131 @@ namespace Evereal.VRVideoPlayer
         }
         protected override void OnClick()
         {
-            if (isNumberIncreasing)
+            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
             {
-                if (hotspotNumber < 8)
+                if (isNumberIncreasing)
                 {
-                    hotspotNumber += 1;
+                    if (hotspotNumber < 8)
+                    {
+                        hotspotNumber += 1;
+                    }
+                }
+                else if (!isNumberIncreasing)
+                {
+                    if (hotspotNumber > 0)
+                    {
+                        hotspotNumber -= 1;
+                    }
                 }
             }
-            else if (!isNumberIncreasing)
+
+            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
             {
-                if (hotspotNumber > 0)
+                if (isNumberIncreasing)
                 {
-                    hotspotNumber -= 1;
+                    if (hotspotNumber < 3)
+                    {
+                        hotspotNumber += 1;
+                    }
+                }
+                else if (!isNumberIncreasing)
+                {
+                    if (hotspotNumber > 0)
+                    {
+                        hotspotNumber -= 1;
+                    }
                 }
             }
+
         }
 
         private void AnimateNumbers()
         {
-            switch (hotspotNumber)
+            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
             {
-                case 0:
-                    numberAnimator.Play("Number1Highlight");
-                    hotspotNumberText.text = "Hotspot 1";
-                    break;
-                case 1:
-                    numberAnimator.Play("Number2Highlight");
-                    hotspotNumberText.text = "Hotspot 2";
-                    break;
-                case 2:
-                    numberAnimator.Play("Number3Highlight");
-                    hotspotNumberText.text = "Hotspot 3";
-                    break;
-                case 3:
-                    numberAnimator.Play("Number4Highlight");
-                    hotspotNumberText.text = "Hotspot 4";
-                    break;
-                case 4:
-                    numberAnimator.Play("Number5Highlight");
-                    hotspotNumberText.text = "Hotspot 5";
-                    break;
-                case 5:
-                    numberAnimator.Play("Number6Highlight");
-                    hotspotNumberText.text = "Hotspot 6";
-                    break;
-                case 6:
-                    numberAnimator.Play("Number7Highlight");
-                    hotspotNumberText.text = "Hotspot 7";
-                    break;
-                case 7:
-                    numberAnimator.Play("Number8Highlight");
-                    hotspotNumberText.text = "Hotspot 8";
-                    break;
-                case 8:
-                    numberAnimator.Play("Number9Highlight");
-                    hotspotNumberText.text = "Hotspot 9";
-                    break;
+                switch (hotspotNumber)
+                {
+                    case 0:
+                        numberAnimator.Play("Number1Highlight");
+                        hotspotNumberText.text = "Hotspot 1";
+                        break;
+                    case 1:
+                        numberAnimator.Play("Number2Highlight");
+                        hotspotNumberText.text = "Hotspot 2";
+                        break;
+                    case 2:
+                        numberAnimator.Play("Number3Highlight");
+                        hotspotNumberText.text = "Hotspot 3";
+                        break;
+                    case 3:
+                        numberAnimator.Play("Number4Highlight");
+                        hotspotNumberText.text = "Hotspot 4";
+                        break;
+                    case 4:
+                        numberAnimator.Play("Number5Highlight");
+                        hotspotNumberText.text = "Hotspot 5";
+                        break;
+                    case 5:
+                        numberAnimator.Play("Number6Highlight");
+                        hotspotNumberText.text = "Hotspot 6";
+                        break;
+                    case 6:
+                        numberAnimator.Play("Number7Highlight");
+                        hotspotNumberText.text = "Hotspot 7";
+                        break;
+                    case 7:
+                        numberAnimator.Play("Number8Highlight");
+                        hotspotNumberText.text = "Hotspot 8";
+                        break;
+                    case 8:
+                        numberAnimator.Play("Number9Highlight");
+                        hotspotNumberText.text = "Hotspot 9";
+                        break;
+                }
             }
+            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
+            {
+                switch (hotspotNumber)
+                {
+                    case 0:
+                        badCityPath2NumberAnimator.Play("P2Number1Highlight");
+                        hotspotNumberText.text = "Hotspot 1";
+                        break;
+                    case 1:
+                        badCityPath2NumberAnimator.Play("P2Number2Highlight");
+                        hotspotNumberText.text = "Hotspot 2";
+                        break;
+                    case 2:
+                        badCityPath2NumberAnimator.Play("P2Number3Highlight");
+                        hotspotNumberText.text = "Hotspot 3";
+                        break;
+                    case 3:
+                        badCityPath2NumberAnimator.Play("P2Number4Highlight");
+                        hotspotNumberText.text = "Hotspot 4";
+                        break;
+                        //case 4:
+                        //    badCityPath2NumberAnimator.Play("Number5Highlight");
+                        //    hotspotNumberText.text = "Hotspot 5";
+                        //    break;
+                        //case 5:
+                        //    badCityPath2NumberAnimator.Play("Number6Highlight");
+                        //    hotspotNumberText.text = "Hotspot 6";
+                        //    break;
+                        //case 6:
+                        //    badCityPath2NumberAnimator.Play("Number7Highlight");
+                        //    hotspotNumberText.text = "Hotspot 7";
+                        //    break;
+                        //case 7:
+                        //    badCityPath2NumberAnimator.Play("Number8Highlight");
+                        //    hotspotNumberText.text = "Hotspot 8";
+                        //    break;
+                        //case 8:
+                        //    badCityPath2NumberAnimator.Play("Number9Highlight");
+                        //    hotspotNumberText.text = "Hotspot 9";
+                        //    break;
+                }
+            }
+
         }
 
         public void ResetAnimation()

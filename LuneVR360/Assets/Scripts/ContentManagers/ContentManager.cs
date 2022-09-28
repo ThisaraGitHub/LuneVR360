@@ -6,6 +6,10 @@ using UnityEngine.UI;
 using Assets.SimpleLocalization;
 public class ContentManager : MonoBehaviour
 {
+    /// <summary>
+    /// This script handles the path selection and content relavent to the selectied path
+    /// </summary>
+
     public CarouselView carouselView;
     public int panelNumber;
     public LocalizedText tittleText;
@@ -15,6 +19,13 @@ public class ContentManager : MonoBehaviour
     public Text tittleTextDummy;
     public Text bodyTextDummy;
     public Text selectionTextDummy;
+
+    public bool isBadCitySelected = false;
+    public bool isWellDesignedCitySelected = false;
+
+    public bool isBadCityPath1Selected = false;
+    public bool isBadCityPath2Selected = false;
+    public bool isBadCityPath3Selected = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +52,12 @@ public class ContentManager : MonoBehaviour
                         //tittleText.Localize();
                         //bodyText.Localize();
                         //selectionText.Localize();
+                        isBadCitySelected = true;
+                        print("Bad Design City Selected");
 
                         tittleTextDummy.text = "Bad Designed City";
                         bodyTextDummy.text = "Bad Designed City";
                         selectionTextDummy.text = "Bad City";
-
-                        print("Bad design city selected");
 
                         break;
                     case 1:
@@ -56,6 +67,8 @@ public class ContentManager : MonoBehaviour
                         //tittleText.Localize();
                         //bodyText.Localize();
                         //selectionText.Localize();
+                        isWellDesignedCitySelected = true;
+                        print("Well Designed City Selected");
 
                         tittleTextDummy.text = "Well Designed City";
                         bodyTextDummy.text = "Well Designed City";
@@ -73,12 +86,15 @@ public class ContentManager : MonoBehaviour
                         //tittleText.Localize();
                         //bodyText.Localize();
                         //selectionText.Localize();
+                        print("Bad design city selected Path 1 selected");
+                        isBadCityPath1Selected = true;
+                        isBadCityPath2Selected = false;
+                        isBadCityPath3Selected = false;
 
                         tittleTextDummy.text = "Path 1";
                         bodyTextDummy.text = "Path 1";
                         selectionTextDummy.text = "Path 1";
 
-                        print("Bad design city selected Path 1 selected");
                         break;
                     case 1:
                         //tittleText.LocalizationKey = "Panel6.Image2Tittle";
@@ -87,6 +103,10 @@ public class ContentManager : MonoBehaviour
                         //tittleText.Localize();
                         //bodyText.Localize();
                         //selectionText.Localize();
+                        print("Bad design city selected Path 2 selected");
+                        isBadCityPath1Selected = false;
+                        isBadCityPath2Selected = true;
+                        isBadCityPath3Selected = false;
 
                         tittleTextDummy.text = "Path 2";
                         bodyTextDummy.text = "Path 2";
@@ -99,6 +119,10 @@ public class ContentManager : MonoBehaviour
                         //tittleText.Localize();
                         //bodyText.Localize();
                         //selectionText.Localize();
+                        print("Bad design city selected Path 3 selected");
+                        isBadCityPath1Selected = false;
+                        isBadCityPath2Selected = false;
+                        isBadCityPath3Selected = true;
 
                         tittleTextDummy.text = "Path 3";
                         bodyTextDummy.text = "Path 3";

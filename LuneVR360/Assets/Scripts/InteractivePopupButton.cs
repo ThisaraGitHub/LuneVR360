@@ -44,6 +44,7 @@ namespace Evereal.VRVideoPlayer
 
         protected override void OnClick()
         {
+            NumberHighlight.hotspotNumber = 0;
             initialControllerInput.modGodspeed = false;
             if (isBackButton)
             {
