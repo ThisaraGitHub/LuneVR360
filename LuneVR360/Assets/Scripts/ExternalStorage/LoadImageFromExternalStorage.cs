@@ -105,8 +105,8 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                 BadCityPath2_360ImageLoad();
             }
 
-        }
     }
+}
 
     public void Switch360ConsequencesImages()
     {
@@ -218,22 +218,22 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         {
             case 0:
                 SetTexture(route2Hostpot1Bad);
-                StartCoroutine(PlayVoiceovers("BD-HotSpot1"));
+                StartCoroutine(PlayVoiceovers("BD-P2-HotSpot1"));
                 nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 19.5f, 0f);
                 break;
             case 1:
                 SetTexture(route2Hostpot2Bad);
-                StartCoroutine(PlayVoiceovers("BD-HotSpot2"));
+                StartCoroutine(PlayVoiceovers("BD-P2-HotSpot2"));
                 nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 61.2f, 0f);
                 break;
             case 2:
                 SetTexture(route2Hostpot3Bad);
-                StartCoroutine(PlayVoiceovers("BD-HotSpot3"));
+                StartCoroutine(PlayVoiceovers("BD-P2-HotSpot3"));
                 nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 97f, 0f);
                 break;
             case 3:
                 SetTexture(route2Hostpot4Bad);
-                StartCoroutine(PlayVoiceovers("BD-HotSpot4"));
+                StartCoroutine(PlayVoiceovers("BD-P2-HotSpot4"));
                 nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 83.8f, 0f);
                 break;
         }

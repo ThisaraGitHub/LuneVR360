@@ -16265,6 +16265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d4e3c7f7f81f44f9a1612aaddf0075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screen5ContentManager: {fileID: 2102879865}
+  screen6ContentManager: {fileID: 203950848}
   sceneToggleButton: {fileID: 633437013}
   audioSource: {fileID: 2105912331}
   BD_P1_CONS_HotSpot1_Played: 0
@@ -16276,6 +16278,10 @@ MonoBehaviour:
   BD_P1_CONS_HotSpot7_Played: 0
   BD_P1_CONS_HotSpot8_Played: 0
   BD_P1_CONS_HotSpot9_Played: 0
+  BD_P2_CONS_HotSpot1_Played: 0
+  BD_P2_CONS_HotSpot2_Played: 0
+  BD_P2_CONS_HotSpot3_Played: 0
+  BD_P2_CONS_HotSpot4_Played: 0
 --- !u!82 &2105912331
 AudioSource:
   m_ObjectHideFlags: 0
