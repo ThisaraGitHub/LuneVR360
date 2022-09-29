@@ -11,6 +11,7 @@ namespace Evereal.VRVideoPlayer
         public Fade fade;
         //public VRImageSelection vRImageSelection;
         public LoadImageFromExternalStorage loadImageFromExternalStorage;
+        public SceneToggleButton sceneToggleButton;
         // Start is called before the first frame update
         void Start()
         {
@@ -38,11 +39,14 @@ namespace Evereal.VRVideoPlayer
         IEnumerator WaitandLoad()
         {
             yield return new WaitForSeconds(2);
+            sceneToggleButton.isToggle = false;
             NumberHighlight.hotspotNumber += 1;
             //vRImageSelection.Load360();
             loadImageFromExternalStorage.Switch360Images();
-            yield return new WaitForSeconds(3);
+            //yield return new WaitForSeconds(2);
             StartCoroutine(fade.StartFadeIn());
+            //yield return new WaitForSeconds(1);
+            //StartCoroutine(fade.StartFadeOut());
         }
 
 

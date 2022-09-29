@@ -1217,7 +1217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5145,7 +5145,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d0b243be610c01948aae7f4d45199dcc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 694c4d6d7d63c7a488530d734b4d28a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14565,6 +14565,7 @@ MonoBehaviour:
   voiceoverPlay: {fileID: 2105912330}
   fade: {fileID: 1277319098}
   loadImageFromExternalStorage: {fileID: 1689832973}
+  sceneToggleButton: {fileID: 633437013}
 --- !u!114 &1952948868
 MonoBehaviour:
   m_ObjectHideFlags: 0

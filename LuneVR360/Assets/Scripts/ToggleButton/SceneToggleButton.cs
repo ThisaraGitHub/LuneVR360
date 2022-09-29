@@ -39,14 +39,14 @@ namespace Evereal.VRVideoPlayer
         {
             yield return new WaitForSeconds(2);
             voiceoverPlay.ResetPlayStatus();
-            if (isToggle == false)
+            if (!isToggle)
             {
                 //do something
                 print("Click 1");
                 loadImageFromExternalStorage.Switch360ConsequencesImages();
                 isToggle = true;
             }
-            else if (isToggle == true)
+            else if (isToggle)
             {
                 //do something
                 print("Click 2");
