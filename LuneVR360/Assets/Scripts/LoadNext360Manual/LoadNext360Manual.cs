@@ -9,7 +9,8 @@ namespace Evereal.VRVideoPlayer
         public ScreenManager screenManager;
         public VoiceoverPlay voiceoverPlay;
         public Fade fade;
-        public VRImageSelection vRImageSelection;
+        //public VRImageSelection vRImageSelection;
+        public LoadImageFromExternalStorage loadImageFromExternalStorage;
         // Start is called before the first frame update
         void Start()
         {
@@ -38,7 +39,8 @@ namespace Evereal.VRVideoPlayer
         {
             yield return new WaitForSeconds(2);
             NumberHighlight.hotspotNumber += 1;
-            vRImageSelection.Load360();
+            //vRImageSelection.Load360();
+            loadImageFromExternalStorage.Switch360Images();
             yield return new WaitForSeconds(3);
             StartCoroutine(fade.StartFadeIn());
         }

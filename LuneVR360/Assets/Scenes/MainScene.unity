@@ -14564,7 +14564,7 @@ MonoBehaviour:
   screenManager: {fileID: 913648315}
   voiceoverPlay: {fileID: 2105912330}
   fade: {fileID: 1277319098}
-  vRImageSelection: {fileID: 1034761333}
+  loadImageFromExternalStorage: {fileID: 1689832973}
 --- !u!114 &1952948868
 MonoBehaviour:
   m_ObjectHideFlags: 0
