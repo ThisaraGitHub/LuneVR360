@@ -235,6 +235,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                 SetTexture(route2Hostpot4Bad);
                 StartCoroutine(PlayVoiceovers("BD-P2-HotSpot4"));
                 nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -83.8f, 0f);
+                nextHotspotLoadIcon.SetActive(false);
                 break;
         }
     }

@@ -55,7 +55,7 @@ namespace Lune.VR360
                         animCanvas.Play("Panel-1-OUT");
                         //screenManager.TittleScreenUI(true);
                         //modGodspeed = true;
-                        Invoke("ActivatePanel2", 1.5f);
+                        Invoke("ActivatePanel2", 1f);
                         onetime = true;
                     }
                 }
