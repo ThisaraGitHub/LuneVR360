@@ -104,8 +104,8 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath2_360ImageLoad();
             }
-        }
     }
+}
 
     public void Switch360ConsequencesImages()
     {
@@ -120,10 +120,8 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath2ConsequncesImagesLoad();
             }
-        }
     }
-
-
+}
 
     private void BadCityPath1_360ImagesLoad()
     {
