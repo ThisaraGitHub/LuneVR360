@@ -2324,9 +2324,6 @@ MonoBehaviour:
   tittleText: {fileID: 1937885523}
   bodyText: {fileID: 253720753}
   selectionText: {fileID: 2058406487}
-  tittleTextDummy: {fileID: 1937885521}
-  bodyTextDummy: {fileID: 253720751}
-  selectionTextDummy: {fileID: 2058406485}
   isBadCitySelected: 0
   isWellDesignedCitySelected: 0
   isBadCityPath1Selected: 0
@@ -16241,9 +16238,6 @@ MonoBehaviour:
   tittleText: {fileID: 1232511641}
   bodyText: {fileID: 395140113}
   selectionText: {fileID: 123531014}
-  tittleTextDummy: {fileID: 1232511639}
-  bodyTextDummy: {fileID: 395140111}
-  selectionTextDummy: {fileID: 123531012}
   isBadCitySelected: 0
   isWellDesignedCitySelected: 0
   isBadCityPath1Selected: 0
