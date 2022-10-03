@@ -7,22 +7,27 @@ namespace Evereal.VRVideoPlayer
 {
     public class NumberHighlight : ButtonBase
     {
+        [Header("Path Selection Reference")]
         public ContentManager screen5ContentManager;
         public ContentManager screen6ContentManager;
 
-        public Text hotspotNumberText;
-        public bool isNumberIncreasing = false;
-        public static int hotspotNumber = 0;
-
+        [Header("BadCity Path1 Number Animation Reference")]
         public GameObject numberAnimationContainer;
         [SerializeField] public Animator numberAnimator;
 
+        [Header("BadCity Path2 Number Animation Reference")]
         public GameObject badCityPath2NumberAnimationContainer;
         [SerializeField] public Animator badCityPath2NumberAnimator;
-        
+
+        [Header("BadCity Path3 Number Animation Reference")]
+        public GameObject badCityPath3NumberAnimationContainer;
+        [SerializeField] public Animator badCityPath3NumberAnimator;
+
+        [Header("Others")]
         public VoiceoverPlay voiceoverPlay;
-
-
+        public Text hotspotNumberText;
+        public bool isNumberIncreasing = false;
+        public static int hotspotNumber = 0;
         public Screen7PathManager screen7PathManager;
 
         // Start is called before the first frame update
@@ -30,6 +35,7 @@ namespace Evereal.VRVideoPlayer
         {
             numberAnimator = numberAnimationContainer.GetComponent<Animator>();
             badCityPath2NumberAnimator = badCityPath2NumberAnimationContainer.GetComponent<Animator>();
+            badCityPath3NumberAnimator = badCityPath3NumberAnimationContainer.GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -73,7 +79,24 @@ namespace Evereal.VRVideoPlayer
                     }
                 }
             }
-            
+            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+            {
+                if (isNumberIncreasing)
+                {
+                    if (hotspotNumber < 8)
+                    {
+                        hotspotNumber += 1;
+                    }
+                }
+                else if (!isNumberIncreasing)
+                {
+                    if (hotspotNumber > 0)
+                    {
+                        hotspotNumber -= 1;
+                    }
+                }
+            }
+
             voiceoverPlay.DisablePlayVoiceoversRandomly();
         }
 
@@ -161,6 +184,48 @@ namespace Evereal.VRVideoPlayer
                         //    badCityPath2NumberAnimator.Play("Number9Highlight");
                         //    hotspotNumberText.text = "Hotspot 9";
                         //    break;
+                }
+            }
+            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+            {
+                switch (hotspotNumber)
+                {
+                    case 0:
+                        badCityPath3NumberAnimator.Play("P3Number1Highlight");
+                        hotspotNumberText.text = "Hotspot 1";
+                        break;
+                    case 1:
+                        badCityPath3NumberAnimator.Play("P3Number2Highlight");
+                        hotspotNumberText.text = "Hotspot 2";
+                        break;
+                    case 2:
+                        badCityPath3NumberAnimator.Play("P3Number3Highlight");
+                        hotspotNumberText.text = "Hotspot 3";
+                        break;
+                    case 3:
+                        badCityPath3NumberAnimator.Play("P3Number4Highlight");
+                        hotspotNumberText.text = "Hotspot 4";
+                        break;
+                    case 4:
+                        badCityPath3NumberAnimator.Play("P3Number5Highlight");
+                        hotspotNumberText.text = "Hotspot 5";
+                        break;
+                    case 5:
+                        badCityPath3NumberAnimator.Play("P3Number6Highlight");
+                        hotspotNumberText.text = "Hotspot 6";
+                        break;
+                    case 6:
+                        badCityPath3NumberAnimator.Play("P3Number7Highlight");
+                        hotspotNumberText.text = "Hotspot 7";
+                        break;
+                    case 7:
+                        badCityPath3NumberAnimator.Play("P3Number8Highlight");
+                        hotspotNumberText.text = "Hotspot 8";
+                        break;
+                    case 8:
+                        badCityPath3NumberAnimator.Play("P3Number9Highlight");
+                        hotspotNumberText.text = "Hotspot 9";
+                        break;
                 }
             }
         }

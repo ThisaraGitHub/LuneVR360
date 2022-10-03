@@ -49,6 +49,29 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route2Hostpot3BadConseq = "R2-H3-bad-conseq.png";
     private string route2Hostpot4BadConseq = "R2-H4-bad-conseq.png";
 
+    // Route 3 image refrences
+    private string route3Hostpot1Bad = "R1-H1-bad.png";
+    private string route3Hostpot2Bad = "R1-H2-bad.png";
+    private string route3Hostpot3Bad = "R1-H3-bad.png";
+    private string route3Hostpot4Bad = "R1-H4-bad.png";
+    private string route3Hostpot5Bad = "R1-H5-bad.png";
+    private string route3Hostpot6Bad = "R1-H6-bad.png";
+    private string route3Hostpot7Bad = "R1-H7-bad.png";
+    private string route3Hostpot8Bad = "R1-H8-bad.png";
+    private string route3Hostpot9Bad = "R1-H9-bad.png";
+    private string route3Hostpot10Bad = "R1-H10-bad.png";
+
+    private string route3Hostpot1BadConseq = "R1-H1-bad-conseq.png";
+    private string route3Hostpot2BadConseq = "R1-H2-bad-conseq.png";
+    private string route3Hostpot3BadConseq = "R1-H3-bad-conseq.png";
+    private string route3Hostpot4BadConseq = "R1-H4-bad-conseq.png";
+    private string route3Hostpot5BadConseq = "R1-H5-bad-conseq.png";
+    private string route3Hostpot6BadConseq = "R1-H6-bad-conseq.png";
+    private string route3Hostpot7BadConseq = "R1-H7-bad-conseq.png";
+    private string route3Hostpot8BadConseq = "R1-H8-bad-conseq.png";
+    private string route3Hostpot9BadConseq = "R1-H9-bad-conseq.png";
+    private string route3Hostpot10BadConseq = "R1-H10-bad-conseq.png";
+
 
     private string _rootPath;
     private string _path;
@@ -104,8 +127,13 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath2_360ImageLoad();
             }
+            else if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+            {
+                BadCityPath3_360ImageLoad();
+            }
         }
     }
+
 
     public void Switch360ConsequencesImages()
     {
@@ -120,8 +148,14 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath2ConsequncesImagesLoad();
             }
+            else if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+            {
+                BadCityPath3ConsequncesImagesLoad();
+            }
         }
     }
+
+
 
     private void BadCityPath1_360ImagesLoad()
     {
@@ -186,11 +220,6 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                 Invoke("DeactivateHotspotIcon", 2f);
                 break;
         }
-    }
-
-    public void DeactivateHotspotIcon()
-    {
-        nextHotspotLoadIcon.SetActive(false);
     }
     private void BadCityPath1ConsequncesImagesLoad()
     {
@@ -276,12 +305,129 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         }
     }
 
+    private void BadCityPath3_360ImageLoad()
+    {
+        switch (NumberHighlight.hotspotNumber)
+        {
+            case 0:
+                SetTexture(route3Hostpot1Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot1"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 151.06f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 1:
+                SetTexture(route3Hostpot2Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot2"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -73.15f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 2:
+                SetTexture(route3Hostpot3Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot3"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -45.57f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 3:
+                SetTexture(route3Hostpot4Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot4"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 62.95f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 4:
+                SetTexture(route3Hostpot5Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot5"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -75.2f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 5:
+                SetTexture(route3Hostpot6Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot6"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 120.87f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 6:
+                SetTexture(route3Hostpot7Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot7"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 161.41f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 7:
+                SetTexture(route3Hostpot8Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot8"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 8:
+                SetTexture(route3Hostpot9Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot9"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                //////////////////////////
+                //nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;
+                //nextHotspotLoadIcon.GetComponent<BoxCollider>().enabled = false;
+                //EnableInteractivityForTheNexthotspotButton(false);
+                //Invoke("DeactivateHotspotIcon", 2f);
+                break;
+            case 9:
+                SetTexture(route3Hostpot10Bad);
+                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot10"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                //////////////////////////
+                nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;
+                nextHotspotLoadIcon.GetComponent<BoxCollider>().enabled = false;
+                EnableInteractivityForTheNexthotspotButton(false);
+                Invoke("DeactivateHotspotIcon", 2f);
+                break;
+        }
+    }
+    private void BadCityPath3ConsequncesImagesLoad()
+    {
+        switch (NumberHighlight.hotspotNumber)
+        {
+            case 0:
+                SetTexture(route3Hostpot1BadConseq);
+                break;
+            case 1:
+                SetTexture(route3Hostpot2BadConseq);
+                break;
+            case 2:
+                SetTexture(route3Hostpot3BadConseq);
+                break;
+            case 3:
+                SetTexture(route3Hostpot4BadConseq);
+                break;
+            case 4:
+                SetTexture(route3Hostpot5BadConseq);
+                break;
+            case 5:
+                SetTexture(route3Hostpot6BadConseq);
+                break;
+            case 6:
+                SetTexture(route3Hostpot7BadConseq);
+                break;
+            case 7:
+                SetTexture(route3Hostpot8BadConseq);
+                break;
+            case 8:
+                SetTexture(route3Hostpot9BadConseq);
+                break;
+            case 9:
+                SetTexture(route3Hostpot10BadConseq);
+                break;
+        }
+    }
+
+
     IEnumerator PlayVoiceovers(string nameofteClip)
     {
         yield return new WaitForSeconds(1);
         voiceoverPlay.SwitchVoiceoverClips(nameofteClip);
     }
 
+    public void DeactivateHotspotIcon()
+    {
+        nextHotspotLoadIcon.SetActive(false);
+    }
     private void EnableInteractivityForTheNexthotspotButton(bool status)
     {
         if (status)
