@@ -131,7 +131,7 @@ public class VoiceoverPlay : MonoBehaviour
                     case 1:
                         if (!audioSource.isPlaying && !BD_P2_CONS_HotSpot2_Played)
                         {
-                            AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot1");
+                            AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot2");
                             audioSource.PlayOneShot(BDHotSpot1);
                             BD_P2_CONS_HotSpot2_Played = true;
                         }
@@ -139,7 +139,7 @@ public class VoiceoverPlay : MonoBehaviour
                     case 2:
                         if (!audioSource.isPlaying && !BD_P2_CONS_HotSpot3_Played)
                         {
-                            AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot1");
+                            AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot3");
                             audioSource.PlayOneShot(BDHotSpot1);
                             BD_P2_CONS_HotSpot3_Played = true;
                         }
@@ -147,7 +147,7 @@ public class VoiceoverPlay : MonoBehaviour
                     case 3:
                         if (!audioSource.isPlaying && !BD_P2_CONS_HotSpot4_Played)
                         {
-                            AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot1");
+                            AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot4");
                             audioSource.PlayOneShot(BDHotSpot1);
                             BD_P2_CONS_HotSpot4_Played = true;
                         }
