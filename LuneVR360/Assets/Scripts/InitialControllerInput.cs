@@ -23,12 +23,19 @@ namespace Lune.VR360
         public float delayedTime;
         public bool isIdleTimeReached = false;
 
+        public GameObject path1Object;
+        private Animator path1Anim;
+        public GameObject path2Object;
+        private Animator path2Anim;
+
         public bool modGodspeed = false;
         // Start is called before the first frame update
         void Start()
         {
             //  screenManager.ControllerUI(true);
             animCanvas = animatorCanvas.GetComponent<Animator>();
+            path1Anim = path1Object.GetComponent<Animator>();
+            path2Anim = path2Object.GetComponent<Animator>();
             time = 0;
             delayedTime = 3;
         }
@@ -109,6 +116,12 @@ namespace Lune.VR360
                         print("On");
                         if (!screenManager.isPanel7Enabled)
                         {
+                            path1Anim.Rebind();
+                            path1Anim.Update(0f);
+                            path2Anim.Rebind();
+                            path2Anim.Update(0f);
+                            animCanvas.Rebind();
+                            animCanvas.Update(0f);
                             canvasObject.SetActive(false);
                             animCanvas.Play("AllPanaleDisable");
                             //StartCoroutine(PanelActiveState());

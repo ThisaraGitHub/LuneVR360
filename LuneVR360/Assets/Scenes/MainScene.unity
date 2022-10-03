@@ -2824,6 +2824,8 @@ MonoBehaviour:
   time: 0
   delayedTime: 3
   isIdleTimeReached: 0
+  path1Object: {fileID: 1114367079}
+  path2Object: {fileID: 1813626808}
   modGodspeed: 0
 --- !u!1 &282615036
 GameObject:
