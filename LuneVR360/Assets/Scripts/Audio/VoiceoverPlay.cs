@@ -296,4 +296,22 @@ public class VoiceoverPlay : MonoBehaviour
         BD_P2_CONS_HotSpot3_Played = false;
         BD_P2_CONS_HotSpot4_Played = false;
     }
+
+    public void DisablePlayVoiceoversRandomly() 
+    {
+        BD_P1_CONS_HotSpot1_Played = true;
+        BD_P1_CONS_HotSpot2_Played = true;
+        BD_P1_CONS_HotSpot3_Played = true;
+        BD_P1_CONS_HotSpot4_Played = true;
+        BD_P1_CONS_HotSpot5_Played = true;
+        BD_P1_CONS_HotSpot6_Played = true;
+        BD_P1_CONS_HotSpot7_Played = true;
+        BD_P1_CONS_HotSpot8_Played = true;
+        BD_P1_CONS_HotSpot9_Played = true;
+
+        BD_P2_CONS_HotSpot1_Played = true;
+        BD_P2_CONS_HotSpot2_Played = true;
+        BD_P2_CONS_HotSpot3_Played = true;
+        BD_P2_CONS_HotSpot4_Played = true;
+    }
 }

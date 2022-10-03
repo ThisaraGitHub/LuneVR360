@@ -28,6 +28,7 @@ namespace Evereal.VRVideoPlayer
         public InitialControllerInput initialControllerInput;
         public ScreenManager screenManager;
         public int indexNumber;
+        public VoiceoverPlay voiceoverPlay;
 
         public VRImageSelection vrImageSelection;
         // Start is called before the first frame update
@@ -46,6 +47,7 @@ namespace Evereal.VRVideoPlayer
         {
             NumberHighlight.hotspotNumber = 0;
             initialControllerInput.modGodspeed = false;
+            voiceoverPlay.DisablePlayVoiceoversRandomly();
             if (isBackButton)
             {
                 BackButton();

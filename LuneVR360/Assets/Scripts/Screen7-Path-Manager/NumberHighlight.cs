@@ -19,6 +19,9 @@ namespace Evereal.VRVideoPlayer
 
         public GameObject badCityPath2NumberAnimationContainer;
         [SerializeField] public Animator badCityPath2NumberAnimator;
+        
+        public VoiceoverPlay voiceoverPlay;
+
 
         public Screen7PathManager screen7PathManager;
 
@@ -53,7 +56,6 @@ namespace Evereal.VRVideoPlayer
                     }
                 }
             }
-
             if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
             {
                 if (isNumberIncreasing)
@@ -71,7 +73,8 @@ namespace Evereal.VRVideoPlayer
                     }
                 }
             }
-
+            
+            voiceoverPlay.DisablePlayVoiceoversRandomly();
         }
 
         private void AnimateNumbers()
@@ -160,7 +163,6 @@ namespace Evereal.VRVideoPlayer
                         //    break;
                 }
             }
-
         }
 
         public void ResetAnimation()

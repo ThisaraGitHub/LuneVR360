@@ -629,6 +629,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 4
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!114 &50032030
 MonoBehaviour:
@@ -4390,6 +4391,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 0
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!114 &537643038
 MonoBehaviour:
@@ -4768,6 +4770,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 2
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!1 &585680638
 GameObject:
@@ -4836,6 +4839,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 3
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!114 &585680641
 MonoBehaviour:
@@ -8069,6 +8073,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 2
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!114 &1047962869
 MonoBehaviour:
@@ -8406,6 +8411,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 5
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!1 &1070579874
 GameObject:
@@ -10777,6 +10783,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 1
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!114 &1409138533
 MonoBehaviour:
@@ -11416,6 +11423,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 5
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!114 &1480122727
 MonoBehaviour:
@@ -12297,6 +12305,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 6
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!1 &1600463165
 GameObject:
@@ -12657,6 +12666,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 4
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!1 &1686647493
 GameObject:
@@ -14201,6 +14211,7 @@ MonoBehaviour:
   numberAnimator: {fileID: 1114367081}
   badCityPath2NumberAnimationContainer: {fileID: 1813626808}
   badCityPath2NumberAnimator: {fileID: 1813626810}
+  voiceoverPlay: {fileID: 2105912330}
   screen7PathManager: {fileID: 383457582}
 --- !u!1 &1900480923
 GameObject:
@@ -15613,6 +15624,7 @@ MonoBehaviour:
   initialControllerInput: {fileID: 269475187}
   screenManager: {fileID: 913648315}
   indexNumber: 3
+  voiceoverPlay: {fileID: 2105912330}
   vrImageSelection: {fileID: 1034761333}
 --- !u!1 &2058406483
 GameObject:
@@ -15802,6 +15814,7 @@ MonoBehaviour:
   numberAnimator: {fileID: 1114367081}
   badCityPath2NumberAnimationContainer: {fileID: 1813626808}
   badCityPath2NumberAnimator: {fileID: 1813626810}
+  voiceoverPlay: {fileID: 2105912330}
   screen7PathManager: {fileID: 383457582}
 --- !u!1 &2073247285
 GameObject:
