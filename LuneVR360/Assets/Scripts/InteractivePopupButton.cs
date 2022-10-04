@@ -46,7 +46,7 @@ namespace Evereal.VRVideoPlayer
         protected override void OnClick()
         {
             NumberHighlight.hotspotNumber = 0;
-            initialControllerInput.modGodspeed = false;
+            initialControllerInput.is360ImageSwitched = false;
             voiceoverPlay.DisablePlayVoiceoversRandomly();
             if (isBackButton)
             {

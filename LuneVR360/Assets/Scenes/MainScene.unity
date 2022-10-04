@@ -2981,6 +2981,7 @@ MonoBehaviour:
   isIdleTimeReached: 0
   path1Object: {fileID: 1114367079}
   path2Object: {fileID: 1813626808}
+  path3Object: {fileID: 1631190886}
   modGodspeed: 0
 --- !u!1 &282615036
 GameObject:
@@ -17776,6 +17777,15 @@ MonoBehaviour:
   BD_P2_CONS_HotSpot2_Played: 0
   BD_P2_CONS_HotSpot3_Played: 0
   BD_P2_CONS_HotSpot4_Played: 0
+  BD_P3_CONS_HotSpot1_Played: 0
+  BD_P3_CONS_HotSpot2_Played: 0
+  BD_P3_CONS_HotSpot3_Played: 0
+  BD_P3_CONS_HotSpot4_Played: 0
+  BD_P3_CONS_HotSpot5_Played: 0
+  BD_P3_CONS_HotSpot6_Played: 0
+  BD_P3_CONS_HotSpot7_Played: 0
+  BD_P3_CONS_HotSpot8_Played: 0
+  BD_P3_CONS_HotSpot9_Played: 0
 --- !u!82 &2105912331
 AudioSource:
   m_ObjectHideFlags: 0

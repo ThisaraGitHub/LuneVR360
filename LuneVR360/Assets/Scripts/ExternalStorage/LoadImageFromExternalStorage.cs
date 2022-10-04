@@ -312,55 +312,55 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             case 0:
                 SetTexture(route3Hostpot1Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot1"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 151.06f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 127.9f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 1:
                 SetTexture(route3Hostpot2Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot2"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -73.15f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 13.6f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 2:
                 SetTexture(route3Hostpot3Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot3"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -45.57f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 13.6f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 3:
                 SetTexture(route3Hostpot4Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot4"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 62.95f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -26.6f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 4:
                 SetTexture(route3Hostpot5Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot5"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -75.2f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 11.7f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 5:
                 SetTexture(route3Hostpot6Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot6"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 120.87f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 79f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 6:
                 SetTexture(route3Hostpot7Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot7"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 161.41f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -9.3f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 7:
                 SetTexture(route3Hostpot8Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot8"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -7f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 8:
                 SetTexture(route3Hostpot9Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot9"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 199.6f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 //////////////////////////
                 //nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;

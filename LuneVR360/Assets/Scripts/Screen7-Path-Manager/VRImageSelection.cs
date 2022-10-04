@@ -60,7 +60,7 @@ namespace Evereal.VRVideoPlayer
             yield return new WaitForSeconds(2);
             isScreen7Enabled = true;
             audioSource.SetActive(true);
-            initialControllerInput.modGodspeed = true;
+            initialControllerInput.is360ImageSwitched = true;
             sceneToggleButton.isToggle = false;
             hotspotSwitchButton.SetActive(true);
             hotspotLoadManualButton.SetActive(true);

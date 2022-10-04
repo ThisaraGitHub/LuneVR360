@@ -27,8 +27,10 @@ namespace Lune.VR360
         private Animator path1Anim;
         public GameObject path2Object;
         private Animator path2Anim;
+        public GameObject path3Object;
+        private Animator path3Anim;
 
-        public bool modGodspeed = false;
+        public bool is360ImageSwitched = false;
         // Start is called before the first frame update
         void Start()
         {
@@ -36,6 +38,7 @@ namespace Lune.VR360
             animCanvas = animatorCanvas.GetComponent<Animator>();
             path1Anim = path1Object.GetComponent<Animator>();
             path2Anim = path2Object.GetComponent<Animator>();
+            path3Anim = path3Object.GetComponent<Animator>();
             time = 0;
             delayedTime = 3;
         }
@@ -93,7 +96,7 @@ namespace Lune.VR360
                 if (OVRInput.GetDown(OVRInput.Button.One) && vRImageSelection.isScreen7Enabled)
                 {
 
-                    if (this.modGodspeed)
+                    if (this.is360ImageSwitched)
                     {
                         //this.speedMult = 1f;
                         print("Off");
@@ -108,9 +111,9 @@ namespace Lune.VR360
                             //animCanvas.Play("AllPanaleDisable");
                         }
 
-                        this.modGodspeed = false;
+                        this.is360ImageSwitched = false;
                     }
-                    else if (!this.modGodspeed)
+                    else if (!this.is360ImageSwitched)
                     {
                         //this.speedMult = 5f;
                         print("On");
@@ -122,6 +125,8 @@ namespace Lune.VR360
                             path2Anim.Update(0f);
                             animCanvas.Rebind();
                             animCanvas.Update(0f);
+                            path3Anim.Rebind();
+                            path3Anim.Update(0f);
                             canvasObject.SetActive(false);
                             animCanvas.Play("AllPanaleDisable");
                             //StartCoroutine(PanelActiveState());
@@ -131,7 +136,7 @@ namespace Lune.VR360
                             //vRImageSelection.Screen7ActiveStatus(true);
                             // animCanvas.Play("AllPanaleEnable");
                         }
-                        this.modGodspeed = true;
+                        this.is360ImageSwitched = true;
                     }
                 }
             }
