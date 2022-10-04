@@ -2982,7 +2982,7 @@ MonoBehaviour:
   path1Object: {fileID: 1114367079}
   path2Object: {fileID: 1813626808}
   path3Object: {fileID: 1631190886}
-  modGodspeed: 0
+  is360ImageSwitched: 0
 --- !u!1 &282615036
 GameObject:
   m_ObjectHideFlags: 0
@@ -18325,7 +18325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.754717, g: 0.11747954, b: 0.39219648, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19043,7 +19043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.735849, g: 0.1492524, b: 0.1492524, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

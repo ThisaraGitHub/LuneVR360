@@ -1,10 +1,12 @@
 Key,Polish
-Panel6.Image1Tittle,1 WYBIERZ TRASĘ
-Panel6.Image1ContentDescription,"1 Trasa do szkoły. Przechodząc między budynkami zwróć uwagę na to, co widzisz."
-Panel6.Image1SelectionText,TRASA 1 Droga do szkoły
-Panel6.Image2Tittle,2 WYBIERZ TRASĘ
-Panel6.Image2ContentDescription,"2 Trasa do szkoły. Przechodząc między budynkami zwróć uwagę na to, co widzisz."
-Panel6.Image2SelectionText,TRASA 2 Droga do szkoły
-Panel6.Image3Tittle,3 WYBIERZ TRASĘ
-Panel6.Image3ContentDescription,"3 Trasa do szkoły. Przechodząc między budynkami zwróć uwagę na to, co widzisz."
-Panel6.Image3SelectionText,TRASA 3 Droga do szkoły
+Panel6.Image1Tittle,WYBIERZ ŚCIEŻKĘ
+Panel6.Image1ContentDescription,Droga do szkoły
+Panel6.Image1SelectionText,Trasa 1 
+Panel6.Image2Tittle,WYBIERZ ŚCIEŻKĘ
+Panel6.Image2ContentDescription,"Droga ze szkoły do
+ centrum handlowego"
+Panel6.Image2SelectionText,Trasa 2
+Panel6.Image3Tittle,WYBIERZ ŚCIEŻKĘ
+Panel6.Image3ContentDescription,"Droga z centrum handlowego
+ do szpitala"
+Panel6.Image3SelectionText,Trasa 3

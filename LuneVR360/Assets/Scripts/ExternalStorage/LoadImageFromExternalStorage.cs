@@ -70,7 +70,6 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route3Hostpot7BadConseq = "R3-H7-bad-conseq.png";
     private string route3Hostpot8BadConseq = "R3-H8-bad-conseq.png";
     private string route3Hostpot9BadConseq = "R3-H9-bad-conseq.png";
-    private string route3Hostpot10BadConseq = "R3-H10-bad-conseq.png";
 
 
     private string _rootPath;
@@ -354,25 +353,13 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             case 7:
                 SetTexture(route3Hostpot8Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot8"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -7f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 200f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 8:
                 SetTexture(route3Hostpot9Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot9"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 200f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
-                //////////////////////////
-                //nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;
-                //nextHotspotLoadIcon.GetComponent<BoxCollider>().enabled = false;
-                //EnableInteractivityForTheNexthotspotButton(false);
-                //Invoke("DeactivateHotspotIcon", 2f);
-                break;
-            case 9:
-                SetTexture(route3Hostpot10Bad);
-                StartCoroutine(PlayVoiceovers("BD-P3-HotSpot10"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
-                //////////////////////////
                 nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;
                 nextHotspotLoadIcon.GetComponent<BoxCollider>().enabled = false;
                 EnableInteractivityForTheNexthotspotButton(false);
@@ -410,9 +397,6 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                 break;
             case 8:
                 SetTexture(route3Hostpot9BadConseq);
-                break;
-            case 9:
-                SetTexture(route3Hostpot10BadConseq);
                 break;
         }
     }
