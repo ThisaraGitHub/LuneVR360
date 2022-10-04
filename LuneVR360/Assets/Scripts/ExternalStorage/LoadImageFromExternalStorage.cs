@@ -50,27 +50,27 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route2Hostpot4BadConseq = "R2-H4-bad-conseq.png";
 
     // Route 3 image refrences
-    private string route3Hostpot1Bad = "R1-H1-bad.png";
-    private string route3Hostpot2Bad = "R1-H2-bad.png";
-    private string route3Hostpot3Bad = "R1-H3-bad.png";
-    private string route3Hostpot4Bad = "R1-H4-bad.png";
-    private string route3Hostpot5Bad = "R1-H5-bad.png";
-    private string route3Hostpot6Bad = "R1-H6-bad.png";
-    private string route3Hostpot7Bad = "R1-H7-bad.png";
-    private string route3Hostpot8Bad = "R1-H8-bad.png";
-    private string route3Hostpot9Bad = "R1-H9-bad.png";
-    private string route3Hostpot10Bad = "R1-H10-bad.png";
+    private string route3Hostpot1Bad = "R3-H1-bad.png";
+    private string route3Hostpot2Bad = "R3-H2-bad.png";
+    private string route3Hostpot3Bad = "R3-H3-bad.png";
+    private string route3Hostpot4Bad = "R3-H4-bad.png";
+    private string route3Hostpot5Bad = "R3-H5-bad.png";
+    private string route3Hostpot6Bad = "R3-H6-bad.png";
+    private string route3Hostpot7Bad = "R3-H7-bad.png";
+    private string route3Hostpot8Bad = "R3-H8-bad.png";
+    private string route3Hostpot9Bad = "R3-H9-bad.png";
+    private string route3Hostpot10Bad = "R3-H10-bad.png";
 
-    private string route3Hostpot1BadConseq = "R1-H1-bad-conseq.png";
-    private string route3Hostpot2BadConseq = "R1-H2-bad-conseq.png";
-    private string route3Hostpot3BadConseq = "R1-H3-bad-conseq.png";
-    private string route3Hostpot4BadConseq = "R1-H4-bad-conseq.png";
-    private string route3Hostpot5BadConseq = "R1-H5-bad-conseq.png";
-    private string route3Hostpot6BadConseq = "R1-H6-bad-conseq.png";
-    private string route3Hostpot7BadConseq = "R1-H7-bad-conseq.png";
-    private string route3Hostpot8BadConseq = "R1-H8-bad-conseq.png";
-    private string route3Hostpot9BadConseq = "R1-H9-bad-conseq.png";
-    private string route3Hostpot10BadConseq = "R1-H10-bad-conseq.png";
+    private string route3Hostpot1BadConseq = "R3-H1-bad-conseq.png";
+    private string route3Hostpot2BadConseq = "R3-H2-bad-conseq.png";
+    private string route3Hostpot3BadConseq = "R3-H3-bad-conseq.png";
+    private string route3Hostpot4BadConseq = "R3-H4-bad-conseq.png";
+    private string route3Hostpot5BadConseq = "R3-H5-bad-conseq.png";
+    private string route3Hostpot6BadConseq = "R3-H6-bad-conseq.png";
+    private string route3Hostpot7BadConseq = "R3-H7-bad-conseq.png";
+    private string route3Hostpot8BadConseq = "R3-H8-bad-conseq.png";
+    private string route3Hostpot9BadConseq = "R3-H9-bad-conseq.png";
+    private string route3Hostpot10BadConseq = "R3-H10-bad-conseq.png";
 
 
     private string _rootPath;
@@ -131,8 +131,8 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath3_360ImageLoad();
             }
-        }
     }
+}
 
 
     public void Switch360ConsequencesImages()
@@ -152,8 +152,8 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath3ConsequncesImagesLoad();
             }
-        }
     }
+}
 
 
 
