@@ -360,7 +360,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             case 8:
                 SetTexture(route3Hostpot9Bad);
                 StartCoroutine(PlayVoiceovers("BD-P3-HotSpot9"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 199.6f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 200f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 //////////////////////////
                 //nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;
