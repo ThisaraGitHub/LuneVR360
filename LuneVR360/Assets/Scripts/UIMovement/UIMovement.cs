@@ -11,18 +11,17 @@ public class UIMovement : MonoBehaviour
     [SerializeField] private bool m_LookatCamera = true;    // Whether the UI element should rotate to face the camera.
     [SerializeField] private Transform m_UIElement;         // The transform of the UI to be affected.
     [SerializeField] private Transform m_Camera;            // The transform of the camera.
-    [SerializeField] private bool m_RotateWithCamera;       // Whether the UI should rotate with the camera so it is always in front.
     [SerializeField] private float m_FollowSpeed = 10f;     // The speed with which the UI should follow the camera.
-
-
     [SerializeField] private float m_DistanceFromCamera;     // The distance the UI should stay from the camera when rotating with it.
 
+    public bool m_RotateWithCamera;       // Whether the UI should rotate with the camera so it is always in front.
 
     private void Start()
     {
         // Find the distance from the UI to the camera so the UI can remain at that distance.
         m_DistanceFromCamera = Vector3.Distance(m_UIElement.position, m_Camera.position);
     }
+
 
 
     private void Update()

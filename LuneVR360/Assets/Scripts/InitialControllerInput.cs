@@ -31,10 +31,13 @@ namespace Lune.VR360
         private Animator path3Anim;
 
         public bool is360ImageSwitched = false;
+
+        public UIMovement uiMovement;
         // Start is called before the first frame update
         void Start()
         {
             //  screenManager.ControllerUI(true);
+            uiMovement.enabled = false;
             animCanvas = animatorCanvas.GetComponent<Animator>();
             path1Anim = path1Object.GetComponent<Animator>();
             path2Anim = path2Object.GetComponent<Animator>();
@@ -55,16 +58,12 @@ namespace Lune.VR360
 
             if (!screenManager.isPanel2Enabled)
             {
-                //if (Input.GetKeyDown("space"))
                 if (OVRInput.Get(OVRInput.Button.One))
                 {
                     if (!onetime)
                     {
                         Debug.Log("A button pressed");
-                        //screenManager.ControllerUI(false);
                         animCanvas.Play("Panel-1-OUT");
-                        //screenManager.TittleScreenUI(true);
-                        //modGodspeed = true;
                         Invoke("ActivatePanel2", 1f);
                         onetime = true;
                     }
@@ -98,24 +97,19 @@ namespace Lune.VR360
 
                     if (this.is360ImageSwitched)
                     {
-                        //this.speedMult = 1f;
                         print("Off");
                         if (!screenManager.isPanel7Enabled)
                         {
                             canvasObject.SetActive(true);
                             animCanvas.Play("AllPanaleEnable");
+                            uiMovement.enabled = true;
+                            uiMovement.m_RotateWithCamera = true;
+                            StartCoroutine(DisableCameraLookAT());
                         }
-                        else
-                        {
-                            // vRImageSelection.Screen7ActiveStatus(false);
-                            //animCanvas.Play("AllPanaleDisable");
-                        }
-
                         this.is360ImageSwitched = false;
                     }
                     else if (!this.is360ImageSwitched)
                     {
-                        //this.speedMult = 5f;
                         print("On");
                         if (!screenManager.isPanel7Enabled)
                         {
@@ -129,12 +123,8 @@ namespace Lune.VR360
                             path3Anim.Update(0f);
                             canvasObject.SetActive(false);
                             animCanvas.Play("AllPanaleDisable");
-                            //StartCoroutine(PanelActiveState());
-                        }
-                        else
-                        {
-                            //vRImageSelection.Screen7ActiveStatus(true);
-                            // animCanvas.Play("AllPanaleEnable");
+                            uiMovement.m_RotateWithCamera = false;
+                            uiMovement.enabled = false;
                         }
                         this.is360ImageSwitched = true;
                     }
@@ -143,12 +133,11 @@ namespace Lune.VR360
 
 
         }
-
-        IEnumerator PanelActiveState()
+        IEnumerator DisableCameraLookAT()
         {
-            yield return new WaitForSeconds(.8f);
-            canvasObject.SetActive(false);
-
+            yield return new WaitForSeconds(.1f);
+            uiMovement.m_RotateWithCamera = false;
+            uiMovement.enabled = false;
         }
         private void ActivatePanel2()
         {
