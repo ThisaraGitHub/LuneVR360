@@ -36,6 +36,9 @@ public class ContentManager : MonoBehaviour
     private void Update()
     {
         SelectItem();
+        tittleText.Localize();
+        bodyText.Localize();
+        selectionText.Localize();
     }
     public void SelectItem()
     {
@@ -49,9 +52,7 @@ public class ContentManager : MonoBehaviour
                         tittleText.LocalizationKey = "Panel5.Image1Tittle";
                         bodyText.LocalizationKey = "Panel5.Image1ContentDescription";
                         selectionText.LocalizationKey = "Panel5.Image1SelectionText";
-                        tittleText.Localize();
-                        bodyText.Localize();
-                        selectionText.Localize();
+                      
                         isBadCitySelected = true;
                         print("Bad Design City Selected");
 
@@ -69,6 +70,10 @@ public class ContentManager : MonoBehaviour
                         selectionText.Localize();
                         isWellDesignedCitySelected = true;
                         print("Well Designed City Selected");
+                        //print(tittleText.LocalizationKey);
+                        //print(bodyText.LocalizationKey);
+                        //print(selectionText.LocalizationKey);
+
 
                         //tittleTextDummy.text = "Well Designed City";
                         //bodyTextDummy.text = "Well Designed City";
