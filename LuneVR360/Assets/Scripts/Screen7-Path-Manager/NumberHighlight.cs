@@ -45,7 +45,7 @@ namespace Evereal.VRVideoPlayer
         }
         protected override void OnClick()
         {
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
+            if (screen5ContentManager.isBadCitySelected || screen5ContentManager.isWellDesignedCitySelected && screen6ContentManager.isBadCityPath1Selected)
             {
                 if (isNumberIncreasing)
                 {
@@ -102,7 +102,7 @@ namespace Evereal.VRVideoPlayer
 
         private void AnimateNumbers()
         {
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
+            if (screen5ContentManager.isBadCitySelected || screen5ContentManager.isWellDesignedCitySelected && screen6ContentManager.isBadCityPath1Selected)
             {
                 switch (hotspotNumber)
                 {

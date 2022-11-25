@@ -17,6 +17,9 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private MeshRenderer meshRenderer;
     private string initial360Image = "menu.png";
 
+    /// <summary>
+    /// Bad Designed City
+    /// </summary>
     // Route 1 image refrences
     private string route1Hostpot1Bad = "R1-H1-bad.png";
     private string route1Hostpot2Bad = "R1-H2-bad.png";
@@ -71,6 +74,21 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route3Hostpot8BadConseq = "R3-H8-bad-conseq.png";
     private string route3Hostpot9BadConseq = "R3-H9-bad-conseq.png";
 
+    /// <summary>
+    /// Well Designed City
+    /// </summary>
+    // Route 1 image refrences
+    private string route1Hostpot1Good = "R1-H1-good.png";
+    private string route1Hostpot2Good = "R1-H2-good.png";
+    private string route1Hostpot3Good = "R1-H3-good.png";
+    private string route1Hostpot4Good = "R1-H4-good.png";
+    private string route1Hostpot5Good = "R1-H5-good.png";
+    private string route1Hostpot6Good = "R1-H6-good.png";
+    private string route1Hostpot7Good = "R1-H7-good.png";
+    private string route1Hostpot8Good = "R1-H8-good.png";
+    private string route1Hostpot9Good = "R1-H9-good.png";
+
+
 
     private string _rootPath;
     private string _path;
@@ -115,8 +133,8 @@ public class LoadImageFromExternalStorage : MonoBehaviour
 
     public void Switch360Images()
     {
-        if (Application.platform == RuntimePlatform.Android)
-        {
+        //if (Application.platform == RuntimePlatform.Android)
+        //{
             _rootPath = Application.persistentDataPath;
             if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
             {
@@ -130,9 +148,12 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath3_360ImageLoad();
             }
+            else if (screen5ContentManager.isWellDesignedCitySelected && screen6ContentManager.isBadCityPath1Selected)
+            {
+                WellDesignCityPath1_360ImageLoad();
+            }
+        //}
     }
-}
-
 
     public void Switch360ConsequencesImages()
     {
@@ -151,11 +172,19 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath3ConsequncesImagesLoad();
             }
+            else if (screen5ContentManager.isWellDesignedCitySelected && screen6ContentManager.isBadCityPath1Selected)
+            {
+                BadCityPath1ConsequncesImagesLoad();
+            }
+        }
     }
-}
 
 
 
+
+    /// <summary>
+    /// Bad city 360 image load
+    /// </summary>
     private void BadCityPath1_360ImagesLoad()
     {
         switch (NumberHighlight.hotspotNumber)
@@ -401,6 +430,75 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Well designed city load 360
+    /// </summary>
+    private void WellDesignCityPath1_360ImageLoad()
+    {
+        print("WellDesignCityPath1_360ImageLoad");
+
+        switch (NumberHighlight.hotspotNumber)
+        {
+            case 0:
+                SetTexture(route1Hostpot1Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot1"));// needs to change audio files
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 151.06f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 1:
+                SetTexture(route1Hostpot2Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot2"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -73.15f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 2:
+                SetTexture(route1Hostpot3Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot3"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -45.57f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 3:
+                SetTexture(route1Hostpot4Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot4"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 62.95f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 4:
+                SetTexture(route1Hostpot5Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot5"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -75.2f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 5:
+                SetTexture(route1Hostpot6Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot6"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 120.87f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 6:
+                SetTexture(route1Hostpot7Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot7"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 161.41f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 7:
+                SetTexture(route1Hostpot8Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot8"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 8:
+                SetTexture(route1Hostpot9Good);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot9"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                //////////////////////////
+                nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;
+                nextHotspotLoadIcon.GetComponent<BoxCollider>().enabled = false;
+                EnableInteractivityForTheNexthotspotButton(false);
+                Invoke("DeactivateHotspotIcon", 2f);
+                break;
+        }
+    }
 
     IEnumerator PlayVoiceovers(string nameofteClip)
     {
