@@ -14,6 +14,8 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     public VoiceoverPlay voiceoverPlay;
     public GameObject nextHotspotLoadIcon;
 
+    public bool switch360ConsequencesImages = false;
+
     private MeshRenderer meshRenderer;
     private string initial360Image = "menu.png";
 
@@ -157,6 +159,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
 
     public void Switch360ConsequencesImages()
     {
+        switch360ConsequencesImages = true;
         if (Application.platform == RuntimePlatform.Android)
         {
             _rootPath = Application.persistentDataPath;
@@ -255,6 +258,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
         {
             case 0:
                 SetTexture(route1Hostpot1BadConseq);
+                StartCoroutine(PlayVoiceovers("BD-HotSpot1"));
                 break;
             case 1:
                 SetTexture(route1Hostpot2BadConseq);

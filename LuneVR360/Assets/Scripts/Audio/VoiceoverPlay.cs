@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class VoiceoverPlay : MonoBehaviour
 {
+    public LoadImageFromExternalStorage loadImageFromExternalStorage;
     public ContentManager screen5ContentManager;
     public ContentManager screen6ContentManager;
 
@@ -47,15 +48,17 @@ public class VoiceoverPlay : MonoBehaviour
     void Update()
     {
 
-        if (sceneToggleButton.isToggle)
+        //if (sceneToggleButton.isToggle)
+        if (loadImageFromExternalStorage.switch360ConsequencesImages)
         {
             if (screen5ContentManager.isBadCitySelected || screen5ContentManager.isWellDesignedCitySelected && screen6ContentManager.isBadCityPath1Selected)
             {
                 switch (NumberHighlight.hotspotNumber)
                 {
                     case 0:
-                        if (!audioSource.isPlaying && !BD_P1_CONS_HotSpot1_Played)
+                        if (!audioSource.isPlaying && BD_P1_CONS_HotSpot1_Played)
                         {
+                            print("aaaaaaaa");
                             AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot1");
                             audioSource.PlayOneShot(BDHotSpot1);
                             BD_P1_CONS_HotSpot1_Played = true;
