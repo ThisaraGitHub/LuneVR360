@@ -39,10 +39,11 @@ namespace Evereal.VRVideoPlayer
         IEnumerator WaitandLoad()
         {
             yield return new WaitForSeconds(2);
-            sceneToggleButton.isToggle = false;
             NumberHighlight.hotspotNumber += 1;
+            //sceneToggleButton.isToggle = false;
             //vRImageSelection.Load360();
-            loadImageFromExternalStorage.Switch360Images();
+            //loadImageFromExternalStorage.Switch360Images();
+            loadImageFromExternalStorage.Switch360ConsequencesImages();
             //yield return new WaitForSeconds(2);
             StartCoroutine(fade.StartFadeIn());
             //yield return new WaitForSeconds(1);
