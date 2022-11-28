@@ -164,26 +164,6 @@ namespace Evereal.VRVideoPlayer
                         badCityPath2NumberAnimator.Play("P2Number4Highlight");
                         hotspotNumberText.text = "Hotspot 4";
                         break;
-                        //case 4:
-                        //    badCityPath2NumberAnimator.Play("Number5Highlight");
-                        //    hotspotNumberText.text = "Hotspot 5";
-                        //    break;
-                        //case 5:
-                        //    badCityPath2NumberAnimator.Play("Number6Highlight");
-                        //    hotspotNumberText.text = "Hotspot 6";
-                        //    break;
-                        //case 6:
-                        //    badCityPath2NumberAnimator.Play("Number7Highlight");
-                        //    hotspotNumberText.text = "Hotspot 7";
-                        //    break;
-                        //case 7:
-                        //    badCityPath2NumberAnimator.Play("Number8Highlight");
-                        //    hotspotNumberText.text = "Hotspot 8";
-                        //    break;
-                        //case 8:
-                        //    badCityPath2NumberAnimator.Play("Number9Highlight");
-                        //    hotspotNumberText.text = "Hotspot 9";
-                        //    break;
                 }
             }
             if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
