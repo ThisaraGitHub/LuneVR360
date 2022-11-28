@@ -22,19 +22,19 @@ public class Screen7PathManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
+        if (screen6ContentManager.isBadCityPath1Selected)
         {
             badCityPath1Object.SetActive(true);
             badCityPath2Object.SetActive(false);
             badCityPath3Object.SetActive(false);
         }
-        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
+        if ( screen6ContentManager.isBadCityPath2Selected)
         {
             badCityPath1Object.SetActive(false);
             badCityPath2Object.SetActive(true);
             badCityPath3Object.SetActive(false);
         }
-        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+        if ( screen6ContentManager.isBadCityPath3Selected)
         {
             badCityPath1Object.SetActive(false);
             badCityPath2Object.SetActive(false);

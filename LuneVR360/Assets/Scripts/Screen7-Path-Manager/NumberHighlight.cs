@@ -45,7 +45,8 @@ namespace Evereal.VRVideoPlayer
         }
         protected override void OnClick()
         {
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
+            // Bad Designed City
+            if (screen6ContentManager.isBadCityPath1Selected)
             {
                 if (isNumberIncreasing)
                 {
@@ -62,7 +63,7 @@ namespace Evereal.VRVideoPlayer
                     }
                 }
             }
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
+            if (screen6ContentManager.isBadCityPath2Selected)
             {
                 if (isNumberIncreasing)
                 {
@@ -79,7 +80,7 @@ namespace Evereal.VRVideoPlayer
                     }
                 }
             }
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+            if (screen6ContentManager.isBadCityPath3Selected)
             {
                 if (isNumberIncreasing)
                 {
@@ -102,7 +103,7 @@ namespace Evereal.VRVideoPlayer
 
         private void AnimateNumbers()
         {
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
+            if (screen6ContentManager.isBadCityPath1Selected)
             {
                 switch (hotspotNumber)
                 {
@@ -144,7 +145,7 @@ namespace Evereal.VRVideoPlayer
                         break;
                 }
             }
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
+            if (screen6ContentManager.isBadCityPath2Selected)
             {
                 switch (hotspotNumber)
                 {
@@ -166,7 +167,7 @@ namespace Evereal.VRVideoPlayer
                         break;
                 }
             }
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+            if (screen6ContentManager.isBadCityPath3Selected)
             {
                 switch (hotspotNumber)
                 {
@@ -208,6 +209,8 @@ namespace Evereal.VRVideoPlayer
                         break;
                 }
             }
+
+
         }
 
         public void ResetAnimation()

@@ -17,7 +17,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private MeshRenderer meshRenderer;
     private string initial360Image = "menu.png";
 
-    // Route 1 image refrences
+    // Bad Designed City Route 1 image refrences
     private string route1Hostpot1Bad = "R1-H1-bad.png";
     private string route1Hostpot2Bad = "R1-H2-bad.png";
     private string route1Hostpot3Bad = "R1-H3-bad.png";
@@ -38,7 +38,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route1Hostpot8BadConseq = "R1-H8-bad-conseq.png";
     private string route1Hostpot9BadConseq = "R1-H9-bad-conseq.png";
 
-    // Route 2 image references
+    // Bad Designed City Route 2 image references
     private string route2Hostpot1Bad = "R2-H1-bad.png";
     private string route2Hostpot2Bad = "R2-H2-bad.png";
     private string route2Hostpot3Bad = "R2-H3-bad.png";
@@ -49,7 +49,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route2Hostpot3BadConseq = "R2-H3-bad-conseq.png";
     private string route2Hostpot4BadConseq = "R2-H4-bad-conseq.png";
 
-    // Route 3 image refrences
+    // Bad Designed City Route 3 image refrences
     private string route3Hostpot1Bad = "R3-H1-bad.png";
     private string route3Hostpot2Bad = "R3-H2-bad.png";
     private string route3Hostpot3Bad = "R3-H3-bad.png";
@@ -59,7 +59,6 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route3Hostpot7Bad = "R3-H7-bad.png";
     private string route3Hostpot8Bad = "R3-H8-bad.png";
     private string route3Hostpot9Bad = "R3-H9-bad.png";
-    private string route3Hostpot10Bad = "R3-H10-bad.png";
 
     private string route3Hostpot1BadConseq = "R3-H1-bad-conseq.png";
     private string route3Hostpot2BadConseq = "R3-H2-bad-conseq.png";
@@ -70,6 +69,34 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     private string route3Hostpot7BadConseq = "R3-H7-bad-conseq.png";
     private string route3Hostpot8BadConseq = "R3-H8-bad-conseq.png";
     private string route3Hostpot9BadConseq = "R3-H9-bad-conseq.png";
+
+    // Well Designed City Route 1 image refrences
+    private string route1Hostpot1GoodConseq = "R1-H1-good-conseq.png";
+    private string route1Hostpot2GoodConseq = "R1-H2-good-conseq.png";
+    private string route1Hostpot3GoodConseq = "R1-H3-good-conseq.png";
+    private string route1Hostpot4GoodConseq = "R1-H4-good-conseq.png";
+    private string route1Hostpot5GoodConseq = "R1-H5-good-conseq.png";
+    private string route1Hostpot6GoodConseq = "R1-H6-good-conseq.png";
+    private string route1Hostpot7GoodConseq = "R1-H7-good-conseq.png";
+    private string route1Hostpot8GoodConseq = "R1-H8-good-conseq.png";
+    private string route1Hostpot9GoodConseq = "R1-H9-good-conseq.png";
+
+    // Well Designed City Route 2 image refrences
+    private string route2Hostpot1GoodConseq = "R2-H1-good-conseq.png";
+    private string route2Hostpot2GoodConseq = "R2-H2-good-conseq.png";
+    private string route2Hostpot3GoodConseq = "R2-H3-good-conseq.png";
+    private string route2Hostpot4GoodConseq = "R2-H4-good-conseq.png";
+
+    // Well Designed City Route 3 image refrences
+    private string route3Hostpot1GoodConseq = "R3-H1-good-conseq.png";
+    private string route3Hostpot2GoodConseq = "R3-H2-good-conseq.png";
+    private string route3Hostpot3GoodConseq = "R3-H3-good-conseq.png";
+    private string route3Hostpot4GoodConseq = "R3-H4-good-conseq.png";
+    private string route3Hostpot5GoodConseq = "R3-H5-good-conseq.png";
+    private string route3Hostpot6GoodConseq = "R3-H6-good-conseq.png";
+    private string route3Hostpot7GoodConseq = "R3-H7-good-conseq.png";
+    private string route3Hostpot8GoodConseq = "R3-H8-good-conseq.png";
+    private string route3Hostpot9GoodConseq = "R3-H9-good-conseq.png";
 
 
     private string _rootPath;
@@ -130,31 +157,44 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             {
                 BadCityPath3_360ImageLoad();
             }
+        }
     }
-}
-
-
     public void Switch360ConsequencesImages()
     {
-        if (Application.platform == RuntimePlatform.Android)
+        //if (Application.platform == RuntimePlatform.Android)
+        //{
+        //    _rootPath = Application.persistentDataPath;
+        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
         {
-            _rootPath = Application.persistentDataPath;
-            if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
-            {
-                BadCityPath1ConsequncesImagesLoad();
-            }
-            else if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
-            {
-                BadCityPath2ConsequncesImagesLoad();
-            }
-            else if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
-            {
-                BadCityPath3ConsequncesImagesLoad();
-            }
+            BadCityPath1ConsequncesImagesLoad();
+        }
+        else if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
+        {
+            BadCityPath2ConsequncesImagesLoad();
+        }
+        else if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+        {
+            BadCityPath3ConsequncesImagesLoad();
+        }
+
+        if (screen5ContentManager.isWellDesignedCitySelected && screen6ContentManager.isBadCityPath1Selected)
+        {
+            print("Well Designed City Path 1 Selected");
+            WellDesignedCityPath1ConsequncesImagesLoad();
+        }
+        else if (screen5ContentManager.isWellDesignedCitySelected && screen6ContentManager.isBadCityPath2Selected)
+        {
+            print("Well Designed City Path 2 Selected");
+            WellDesignedCityPath2ConsequncesImagesLoad();
+        }
+        else if (screen5ContentManager.isWellDesignedCitySelected && screen6ContentManager.isBadCityPath3Selected)
+        {
+            print("Well Designed City Path 3 Selected");
+            WellDesignedCityPath3ConsequncesImagesLoad();
+
+        }
+        //}
     }
-}
-
-
 
     private void BadCityPath1_360ImagesLoad()
     {
@@ -476,13 +516,172 @@ public class LoadImageFromExternalStorage : MonoBehaviour
     }
 
 
+    private void WellDesignedCityPath1ConsequncesImagesLoad()
+    {
+        switch (NumberHighlight.hotspotNumber)
+        {
+            case 0:
+                SetTexture(route1Hostpot1GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot1"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 151.06f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 1:
+                SetTexture(route1Hostpot2GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot2"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -73.15f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 2:
+                SetTexture(route1Hostpot3GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot3"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -45.57f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 3:
+                SetTexture(route1Hostpot4GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot4"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 62.95f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 4:
+                SetTexture(route1Hostpot5GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot5"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -75.2f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 5:
+                SetTexture(route1Hostpot6GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot6"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 120.87f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 6:
+                SetTexture(route1Hostpot7GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot7"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 161.41f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 7:
+                SetTexture(route1Hostpot8GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot8"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 8:
+                SetTexture(route1Hostpot9GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot9"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                //////////////////////////
+                nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;
+                nextHotspotLoadIcon.GetComponent<BoxCollider>().enabled = false;
+                EnableInteractivityForTheNexthotspotButton(false);
+                Invoke("DeactivateHotspotIcon", 2f);
+                break;
+        }
+    }
+    private void WellDesignedCityPath2ConsequncesImagesLoad()
+    {
+        switch (NumberHighlight.hotspotNumber)
+        {
+            case 0:
+                SetTexture(route2Hostpot1GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P2-CONS-HotSpot1"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -19.5f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 1:
+                SetTexture(route2Hostpot2GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P2-CONS-HotSpot2"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 61.2f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 2:
+                SetTexture(route2Hostpot3GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P2-CONS-HotSpot3"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -97f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 3:
+                SetTexture(route2Hostpot4GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P2-CONS-HotSpot4"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -83.8f, 0f);
+                EnableInteractivityForTheNexthotspotButton(false);
+                Invoke("DeactivateHotspotIcon", 2f);
+                break;
+        }
+    }
+    private void WellDesignedCityPath3ConsequncesImagesLoad() 
+    {
+        switch (NumberHighlight.hotspotNumber)
+        {
+            case 0:
+                SetTexture(route3Hostpot1GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot1"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 127.9f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 1:
+                SetTexture(route3Hostpot2GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot2"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 13.6f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 2:
+                SetTexture(route3Hostpot3GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot3"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 13.6f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 3:
+                SetTexture(route3Hostpot4GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot4"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -26.6f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 4:
+                SetTexture(route3Hostpot5GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot5"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 11.7f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 5:
+                SetTexture(route3Hostpot6GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot6"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 79f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 6:
+                SetTexture(route3Hostpot7GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot7"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -9.3f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 7:
+                SetTexture(route3Hostpot8GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot8"));
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 200f, 0f);
+                EnableInteractivityForTheNexthotspotButton(true);
+                break;
+            case 8:
+                SetTexture(route3Hostpot9GoodConseq);
+                StartCoroutine(PlayVoiceovers("BD-P3-CONS-HotSpot9"));
+                EnableInteractivityForTheNexthotspotButton(true);
+                nextHotspotLoadIcon.GetComponent<SpriteRenderer>().enabled = false;
+                nextHotspotLoadIcon.GetComponent<BoxCollider>().enabled = false;
+                EnableInteractivityForTheNexthotspotButton(false);
+                Invoke("DeactivateHotspotIcon", 2f);
+                break;
+        }
+    }
+
+
     IEnumerator PlayVoiceovers(string nameofteClip)
     {
         yield return new WaitForSeconds(1);
         //voiceoverPlay.SwitchVoiceoverClips(nameofteClip);
         voiceoverPlay.SwitchConsequencesVoiceoverClips(nameofteClip);
     }
-
     public void DeactivateHotspotIcon()
     {
         nextHotspotLoadIcon.SetActive(false);

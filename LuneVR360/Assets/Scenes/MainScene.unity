@@ -1078,8 +1078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecaa73cde36c434791216c03b18791b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 2087292029}
-  disableTime: 2
 --- !u!1 &103250273
 GameObject:
   m_ObjectHideFlags: 0
