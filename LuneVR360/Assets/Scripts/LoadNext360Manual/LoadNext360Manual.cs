@@ -42,7 +42,8 @@ namespace Evereal.VRVideoPlayer
             sceneToggleButton.isToggle = false;
             NumberHighlight.hotspotNumber += 1;
             //vRImageSelection.Load360();
-            loadImageFromExternalStorage.Switch360Images();
+            //loadImageFromExternalStorage.Switch360Images();
+            loadImageFromExternalStorage.Switch360ConsequencesImages();
             //yield return new WaitForSeconds(2);
             StartCoroutine(fade.StartFadeIn());
             //yield return new WaitForSeconds(1);

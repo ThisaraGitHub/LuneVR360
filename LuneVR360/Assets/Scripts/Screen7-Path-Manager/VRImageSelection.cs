@@ -62,9 +62,10 @@ namespace Evereal.VRVideoPlayer
             audioSource.SetActive(true);
             initialControllerInput.is360ImageSwitched = true;
             sceneToggleButton.isToggle = false;
-            hotspotSwitchButton.SetActive(true);
+            hotspotSwitchButton.SetActive(false);
             hotspotLoadManualButton.SetActive(true);
-            loadImageFromExternalStorage.Switch360Images();
+            //loadImageFromExternalStorage.Switch360Images();
+            loadImageFromExternalStorage.Switch360ConsequencesImages();
             yield return new WaitForSeconds(1);
             StartCoroutine(fade.StartFadeIn());
         }
