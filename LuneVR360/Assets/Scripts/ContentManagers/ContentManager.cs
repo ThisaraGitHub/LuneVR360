@@ -54,6 +54,7 @@ public class ContentManager : MonoBehaviour
                         selectionText.LocalizationKey = "Panel5.Image1SelectionText";
                       
                         isBadCitySelected = true;
+                        isWellDesignedCitySelected = false;
                         print("Bad Design City Selected");
 
                         //tittleTextDummy.text = "Bad Designed City";
@@ -69,6 +70,7 @@ public class ContentManager : MonoBehaviour
                         bodyText.Localize();
                         selectionText.Localize();
                         isWellDesignedCitySelected = true;
+                        isBadCitySelected = false;
                         print("Well Designed City Selected");
                         //print(tittleText.LocalizationKey);
                         //print(bodyText.LocalizationKey);
