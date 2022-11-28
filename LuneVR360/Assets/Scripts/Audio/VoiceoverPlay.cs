@@ -167,7 +167,6 @@ public class VoiceoverPlay : MonoBehaviour
                 }
             }
 
-            // Need to work on here
             if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
             {
                 switch (NumberHighlight.hotspotNumber)
@@ -436,6 +435,184 @@ public class VoiceoverPlay : MonoBehaviour
             }
         }
 
+    }
+
+    public void SwitchConsequencesVoiceoverClips(string ClipName) 
+    {
+        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath1Selected)
+        {
+            switch (ClipName)
+            {
+                case "BD-P1-CONS-HotSpot1":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot1");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P1-CONS-HotSpot2":
+                    if (!audioSource.isPlaying )
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot2");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P1-CONS-HotSpot3":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot3");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P1-CONS-HotSpot4":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot4");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P1-CONS-HotSpot5":
+                    if (!audioSource.isPlaying )
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot5");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P1-CONS-HotSpot6":
+                    if (!audioSource.isPlaying )
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot6");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P1-CONS-HotSpot7":
+                    if (!audioSource.isPlaying )
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot7");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P1-CONS-HotSpot8":
+                    if (!audioSource.isPlaying )
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot8");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P1-CONS-HotSpot9":
+                    if (!audioSource.isPlaying )
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_1/BD-P1-CONS-HotSpot9");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+            }
+        }
+
+        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath2Selected)
+        {
+            switch (ClipName)
+            {
+                case "BD-P2-CONS-HotSpot1":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot1");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P2-CONS-HotSpot2":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot2");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P2-CONS-HotSpot3":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot3");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P2-CONS-HotSpot4":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_2/BD-P2-CONS-HotSpot4");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+            }
+        }
+
+        if (screen5ContentManager.isBadCitySelected && screen6ContentManager.isBadCityPath3Selected)
+        {
+            switch (ClipName)
+            {
+                case "BD-P3-CONS-HotSpot1":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot1");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P3-CONS-HotSpot2":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot2");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P3-CONS-HotSpot3":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot3");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P3-CONS-HotSpot4":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot4");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P3-CONS-HotSpot5":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot5");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P3-CONS-HotSpot6":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot6");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P3-CONS-HotSpot7":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot7");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P3-CONS-HotSpot8":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot8");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+                case "BD-P3-CONS-HotSpot9":
+                    if (!audioSource.isPlaying)
+                    {
+                        AudioClip BDHotSpot1 = (AudioClip)Resources.Load("Voiceovers/Bad_Designed_City/Path_3/BD-P3-CONS-HotSpot9");
+                        audioSource.PlayOneShot(BDHotSpot1);
+                    }
+                    break;
+            }
+        }
     }
     public void StopVoicePlay()
     {
