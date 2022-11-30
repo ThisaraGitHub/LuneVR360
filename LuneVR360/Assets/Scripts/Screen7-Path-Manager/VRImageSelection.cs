@@ -23,6 +23,7 @@ namespace Evereal.VRVideoPlayer
         public GameObject screen7;
         Animator screen7Animator;
         public bool isScreen7Enabled = false;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -47,7 +48,6 @@ namespace Evereal.VRVideoPlayer
                 voiceoverPlay.StopVoicePlay();
                 StartCoroutine(WaitandFadeIn());
                 Screen7ActiveStatus(false);
-
             }
         }
 
@@ -64,7 +64,6 @@ namespace Evereal.VRVideoPlayer
             sceneToggleButton.isToggle = false;
             hotspotSwitchButton.SetActive(false);
             hotspotLoadManualButton.SetActive(true);
-            //loadImageFromExternalStorage.Switch360Images();
             loadImageFromExternalStorage.Switch360ConsequencesImages();
             yield return new WaitForSeconds(1);
             StartCoroutine(fade.StartFadeIn());
@@ -74,14 +73,8 @@ namespace Evereal.VRVideoPlayer
         {
             if (!status)
             {
-                //screen7Animator.SetInteger("Anim", 0);
                 animCanvas.Play("AllPanaleDisable");
             }
-            //else
-            //{
-            //    //screen7Animator.SetInteger("Anim", 1);
-            //    animCanvas.Play("Panel-7-IN");
-            //}
         }
     }
 }

@@ -100,7 +100,6 @@ namespace Evereal.VRVideoPlayer
 
             voiceoverPlay.DisablePlayVoiceoversRandomly();
         }
-
         private void AnimateNumbers()
         {
             if (screen6ContentManager.isBadCityPath1Selected)
@@ -209,13 +208,9 @@ namespace Evereal.VRVideoPlayer
                         break;
                 }
             }
-
-
         }
-
         public void ResetAnimation()
         {
-
             numberAnimator.Play("Number1Highlight", 1, 0);
             numberAnimator.Play("Number2Highlight", 1, 0);
             numberAnimator.Play("Number3Highlight", 1, 0);

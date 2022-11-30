@@ -7,6 +7,7 @@ namespace Evereal.VRVideoPlayer
 {
     public class SceneToggleButton : ButtonBase
     {
+        // This script is no needed since client changed the requriment
         public ScreenManager screenManager;
         public VoiceoverPlay voiceoverPlay;
         public Fade fade;
@@ -51,7 +52,7 @@ namespace Evereal.VRVideoPlayer
                 //do something
                 print("Click 2");
                 voiceoverPlay.PlayVoicePlay();
-                loadImageFromExternalStorage.Switch360Images();
+                //loadImageFromExternalStorage.Switch360Images();
                 isToggle = false;
             }
             yield return new WaitForSeconds(1);
