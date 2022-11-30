@@ -166,13 +166,13 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             case 0:
                 SetTexture(route1Hostpot1BadConseq);
                 StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot1"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 151.06f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 1:
                 SetTexture(route1Hostpot2BadConseq);
                 StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot2"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -73.15f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, -80f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 2:
@@ -184,7 +184,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             case 3:
                 SetTexture(route1Hostpot4BadConseq);
                 StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot4"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 62.95f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 102f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 4:
@@ -208,7 +208,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
             case 7:
                 SetTexture(route1Hostpot8BadConseq);
                 StartCoroutine(PlayVoiceovers("BD-P1-CONS-HotSpot8"));
-                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 20.4f, 0f);
+                nextHotspotIcon.transform.localRotation = Quaternion.Euler(0f, 15f, 0f);
                 EnableInteractivityForTheNexthotspotButton(true);
                 break;
             case 8:
@@ -414,7 +414,7 @@ public class LoadImageFromExternalStorage : MonoBehaviour
                 break;
         }
     }
-    private void WellDesignedCityPath3ConsequncesImagesLoad() 
+    private void WellDesignedCityPath3ConsequncesImagesLoad()
     {
         switch (NumberHighlight.hotspotNumber)
         {
