@@ -56,7 +56,7 @@ namespace Lune.VR360
             //  !screenManager.isPanel6Enabled &&
             //  !screenManager.isPanel7Enabled
 
-            if (!screenManager.isPanel2Enabled)
+            if (!screenManager.isPanel2Enabled && screenManager.controllerUIEnabled)
             {
                 if (OVRInput.Get(OVRInput.Button.One))
                 {

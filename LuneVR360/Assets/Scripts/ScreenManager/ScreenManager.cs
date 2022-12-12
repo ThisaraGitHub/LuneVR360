@@ -8,9 +8,11 @@ namespace Lune.VR360
     {
         public GameObject animatorCanvas;
         private Animator animCanvas;
+        private Animator sponcerCanvas;
         public AudioSource menuPopupSound;
         public AudioSource menuClickSound;
 
+        public GameObject panel0;
         public GameObject panel1;
         public GameObject panel2;
         public GameObject panel3;
@@ -33,11 +35,15 @@ namespace Lune.VR360
         public bool isPanel6OpnedOnce = false;
         public bool isPanel7OpnedOnce = false;
 
+        public bool controllerUIEnabled = false;
+
         // Start is called before the first frame update
         void Start()
         {
             animCanvas = animatorCanvas.GetComponent<Animator>();
-            ControllerUI(true);
+            sponcerCanvas = panel0.GetComponent<Animator>();
+            sponcerCanvas.SetInteger("Anim", 0);
+            StartCoroutine(ExecuteAfterTime(10));
             //TittleScreenUI(false);
         }
 
@@ -47,6 +53,15 @@ namespace Lune.VR360
 
         }
 
+        IEnumerator ExecuteAfterTime(float time)
+        {
+            yield return new WaitForSeconds(time);
+            sponcerCanvas.SetInteger("Anim", 1);
+            yield return new WaitForSeconds(2);
+            panel0.SetActive(false);
+            ControllerUI(true);
+            controllerUIEnabled = true;
+        }
         public void ControllerUI(bool ActiveStatus)
         {
             if (ActiveStatus)
@@ -97,7 +112,7 @@ namespace Lune.VR360
                 animCanvas.Play("Panel-3-IN");
                 isPanel3Enabled = true;
                 isPanel3OpnedOnce = true;
-               // StartCoroutine(WaitandPlayAudio("Menu"));
+                // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -113,7 +128,7 @@ namespace Lune.VR360
                 panel4.SetActive(true);
                 isPanel4Enabled = true;
                 isPanel4OpnedOnce = true;
-               // StartCoroutine(WaitandPlayAudio("Menu"));
+                // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -128,7 +143,7 @@ namespace Lune.VR360
                 panel5.SetActive(true);
                 isPanel5Enabled = true;
                 isPanel5OpnedOnce = true;
-               // StartCoroutine(WaitandPlayAudio("Menu"));
+                // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -143,7 +158,7 @@ namespace Lune.VR360
                 panel6.SetActive(true);
                 isPanel6Enabled = true;
                 isPanel6OpnedOnce = true;
-               // StartCoroutine(WaitandPlayAudio("Menu"));
+                // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -158,7 +173,7 @@ namespace Lune.VR360
                 panel7.SetActive(true);
                 isPanel7Enabled = true;
                 isPanel7OpnedOnce = true;
-               // StartCoroutine(WaitandPlayAudio("Menu"));
+                // StartCoroutine(WaitandPlayAudio("Menu"));
             }
             else
             {
@@ -168,7 +183,7 @@ namespace Lune.VR360
         }
 
 
-        public void MenuAudioPlay() 
+        public void MenuAudioPlay()
         {
             menuPopupSound.Play();
         }
