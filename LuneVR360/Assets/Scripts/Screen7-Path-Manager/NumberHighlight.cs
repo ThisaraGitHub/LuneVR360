@@ -215,19 +215,43 @@ namespace Evereal.VRVideoPlayer
                 {
                     case 0:
                         badCityPath2NumberAnimator.Play("P2Number1Highlight");
-                        hotspotNumberText.text = "Hotspot 1";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot1TittleTrack2";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot1DescriptionTrack2";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 1:
                         badCityPath2NumberAnimator.Play("P2Number2Highlight");
-                        hotspotNumberText.text = "Hotspot 2";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot2TittleTrack2";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot2DescriptionTrack2";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 2:
                         badCityPath2NumberAnimator.Play("P2Number3Highlight");
-                        hotspotNumberText.text = "Hotspot 3";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot3TittleTrack2";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot3DescriptionTrack2";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 3:
                         badCityPath2NumberAnimator.Play("P2Number4Highlight");
-                        hotspotNumberText.text = "Hotspot 4";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot4TittleTrack2";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot4DescriptionTrack2";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                 }
             }
