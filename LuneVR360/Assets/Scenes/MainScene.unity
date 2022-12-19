@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123531010}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
   m_Name: 
@@ -3981,7 +3981,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395140109}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
   m_Name: 
@@ -4551,6 +4551,8 @@ MonoBehaviour:
     Id: 94271896
   - Name: Sheet3
     Id: 1275675753
+  - Name: Sheet4
+    Id: 839300864
   SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}
 --- !u!1 &514434911
 GameObject:
@@ -12372,6 +12374,7 @@ GameObject:
   - component: {fileID: 1436243124}
   - component: {fileID: 1436243126}
   - component: {fileID: 1436243125}
+  - component: {fileID: 1436243127}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -12432,7 +12435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WYBIERZ PUNKT STARTOWY
+  m_Text: 
 --- !u!222 &1436243126
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12441,6 +12444,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436243123}
   m_CullTransparentMesh: 1
+--- !u!114 &1436243127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436243123}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: 
 --- !u!1 &1455398228
 GameObject:
   m_ObjectHideFlags: 0
@@ -15202,6 +15218,7 @@ GameObject:
   - component: {fileID: 1780059712}
   - component: {fileID: 1780059714}
   - component: {fileID: 1780059713}
+  - component: {fileID: 1780059715}
   m_Layer: 5
   m_Name: Text (Legacy) (1)
   m_TagString: Untagged
@@ -15262,7 +15279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Punkt startowy, to miejsce, gdzie zaczynasz zwiedzanie miasta. '
+  m_Text: 
 --- !u!222 &1780059714
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15271,6 +15288,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780059711}
   m_CullTransparentMesh: 1
+--- !u!114 &1780059715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780059711}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: 
 --- !u!1 &1801767416
 GameObject:
   m_ObjectHideFlags: 0
@@ -15912,6 +15942,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  screen7TittleText: {fileID: 1436243127}
+  screen7DescriptionText: {fileID: 1780059715}
+  screen7NextButtonText: {fileID: 2032718521}
   screen5ContentManager: {fileID: 2102879865}
   screen6ContentManager: {fileID: 203950848}
   numberAnimationContainer: {fileID: 1114367079}
@@ -17137,6 +17170,7 @@ GameObject:
   - component: {fileID: 2032718518}
   - component: {fileID: 2032718520}
   - component: {fileID: 2032718519}
+  - component: {fileID: 2032718521}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -17197,7 +17231,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PUNKT STARTOWY 1
+  m_Text: 
 --- !u!222 &2032718520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17206,6 +17240,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032718517}
   m_CullTransparentMesh: 1
+--- !u!114 &2032718521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032718517}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: 
 --- !u!1 &2034075871
 GameObject:
   m_ObjectHideFlags: 0
@@ -17672,6 +17719,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerCtrl: {fileID: 1900728406}
+  screen7TittleText: {fileID: 1436243127}
+  screen7DescriptionText: {fileID: 1780059715}
+  screen7NextButtonText: {fileID: 2032718521}
   screen5ContentManager: {fileID: 2102879865}
   screen6ContentManager: {fileID: 203950848}
   numberAnimationContainer: {fileID: 1114367079}

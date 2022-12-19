@@ -1,3 +1,4 @@
+using Assets.SimpleLocalization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,12 @@ namespace Evereal.VRVideoPlayer
 {
     public class NumberHighlight : ButtonBase
     {
+
+        [Header("Localized Text Reference")]
+        public LocalizedText screen7TittleText;
+        public LocalizedText screen7DescriptionText;
+        public LocalizedText screen7NextButtonText;
+
         [Header("Path Selection Reference")]
         public ContentManager screen5ContentManager;
         public ContentManager screen6ContentManager;
@@ -108,39 +115,97 @@ namespace Evereal.VRVideoPlayer
                 {
                     case 0:
                         numberAnimator.Play("Number1Highlight");
-                        hotspotNumberText.text = "Hotspot 1";
+                        //hotspotNumberText.text = "Hotspot 1";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot1Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot1Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 1:
                         numberAnimator.Play("Number2Highlight");
-                        hotspotNumberText.text = "Hotspot 2";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot2Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot2Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 2:
                         numberAnimator.Play("Number3Highlight");
-                        hotspotNumberText.text = "Hotspot 3";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot3Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot3Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 3:
                         numberAnimator.Play("Number4Highlight");
-                        hotspotNumberText.text = "Hotspot 4";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot4Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot4Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 4:
                         numberAnimator.Play("Number5Highlight");
-                        hotspotNumberText.text = "Hotspot 5";
+
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot5Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot5Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
+
+
                         break;
                     case 5:
                         numberAnimator.Play("Number6Highlight");
-                        hotspotNumberText.text = "Hotspot 6";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot6Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot6Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 6:
                         numberAnimator.Play("Number7Highlight");
-                        hotspotNumberText.text = "Hotspot 7";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot7Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot7Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 7:
                         numberAnimator.Play("Number8Highlight");
-                        hotspotNumberText.text = "Hotspot 8";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot8Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot8Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                     case 8:
                         numberAnimator.Play("Number9Highlight");
-                        hotspotNumberText.text = "Hotspot 9";
+                        screen7TittleText.LocalizationKey = "Panel7.Hotspot9Tittle";
+                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot9Description";
+                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                        screen7TittleText.Localize();
+                        screen7DescriptionText.Localize();
+                        screen7NextButtonText.Localize();
                         break;
                 }
             }
