@@ -290,24 +290,57 @@ namespace Evereal.VRVideoPlayer
                         screen7NextButtonText.Localize();
                         break;
                     case 3:
-                        badCityPath3NumberAnimator.Play("P3Number4Highlight");
-                        screen7TittleText.LocalizationKey = "Panel7.Hotspot4TittleTrack3";
-                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot4DescriptionTrack3";
-                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
 
-                        screen7TittleText.Localize();
-                        screen7DescriptionText.Localize();
-                        screen7NextButtonText.Localize();
+                        if (!screen5ContentManager.isWellDesignedCitySelected)
+                        {
+                            badCityPath3NumberAnimator.Play("P3Number4Highlight");
+                            screen7TittleText.LocalizationKey = "Panel7.Hotspot4TittleTrack3";
+                            screen7DescriptionText.LocalizationKey = "Panel7.Hotspot4DescriptionTrack3";
+                            screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                            screen7TittleText.Localize();
+                            screen7DescriptionText.Localize();
+                            screen7NextButtonText.Localize();
+                        }
+                        else 
+                        {
+                            print("aaaaaaaaaaaaaaaaaa");
+
+                            badCityPath3NumberAnimator.Play("P3Number4Highlight");
+                            screen7TittleText.LocalizationKey = "Panel7.Hotspot4TittleTrack3";
+                            screen7DescriptionText.LocalizationKey = "Panel7.Hotspot4DescriptionTrack3New";
+                            screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                            screen7TittleText.Localize();
+                            screen7DescriptionText.Localize();
+                            screen7NextButtonText.Localize();
+                        }
+
                         break;
                     case 4:
-                        badCityPath3NumberAnimator.Play("P3Number5Highlight");
-                        screen7TittleText.LocalizationKey = "Panel7.Hotspot5TittleTrack3";
-                        screen7DescriptionText.LocalizationKey = "Panel7.Hotspot5DescriptionTrack3";
-                        screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+                        if (!screen5ContentManager.isWellDesignedCitySelected)
+                        {
+                            badCityPath3NumberAnimator.Play("P3Number5Highlight");
+                            screen7TittleText.LocalizationKey = "Panel7.Hotspot5TittleTrack3";
+                            screen7DescriptionText.LocalizationKey = "Panel7.Hotspot5DescriptionTrack3";
+                            screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
 
-                        screen7TittleText.Localize();
-                        screen7DescriptionText.Localize();
-                        screen7NextButtonText.Localize();
+                            screen7TittleText.Localize();
+                            screen7DescriptionText.Localize();
+                            screen7NextButtonText.Localize();
+                        }
+                        else 
+                        {
+                            badCityPath3NumberAnimator.Play("P3Number5Highlight");
+                            screen7TittleText.LocalizationKey = "Panel7.Hotspot5TittleTrack3";
+                            screen7DescriptionText.LocalizationKey = "Panel7.Hotspot5DescriptionTrack3New";
+                            screen7NextButtonText.LocalizationKey = "Panel7.NextButton";
+
+                            screen7TittleText.Localize();
+                            screen7DescriptionText.Localize();
+                            screen7NextButtonText.Localize();
+                        }
+                            
                         break;
                     case 5:
                         badCityPath3NumberAnimator.Play("P3Number6Highlight");
