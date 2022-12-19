@@ -1,15 +1,12 @@
 Key,Polish
-Panel5.Image1Tittle,"WYBIERZ MIASTO:
-ŹLE ZAPROJEKTOWANE"
+Panel5.Image1Tittle,"Miasto źle 
+zaprojektowane"
 Panel5.Image1ContentDescription,"Zwróć uwagę na wszytkie błędne
 koncepcje zagospodarowania terenu.
 Zobacze konsekwecje błędów."
-Panel5.Image1SelectionText,"MIASTO ŹLE 
-ZAPROJEKTOWANE"
-Panel5.Image2Tittle,"WYBIERZ MIASTO:
-DOBRZE ZAPROJEKTOWANE"
-Panel5.Image2ContentDescription,"Zwróć uwagę na wszytkie błędne
-koncepcje zagospodarowania terenu.
-Zobacze konsekwecje błędów."
-Panel5.Image2SelectionText,"MIASTO DOBRZE
-ZAPROJEKTOWANE"
+Panel5.Image1SelectionText,Wybierz
+Panel5.Image2Tittle,"Miasto dobrze 
+zaprojektowane"
+Panel5.Image2ContentDescription,"Zwróć uwagę na dobre koncepcje 
+zagospodarowania terenu i ich konsekwencje"
+Panel5.Image2SelectionText,Wybierz

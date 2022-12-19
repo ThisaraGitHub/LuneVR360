@@ -1,12 +1,12 @@
 Key,Polish
-Panel6.Image1Tittle,WYBIERZ ŚCIEŻKĘ
+Panel6.Image1Tittle,Trasa 1
 Panel6.Image1ContentDescription,Droga do szkoły
-Panel6.Image1SelectionText,Trasa 1 
-Panel6.Image2Tittle,WYBIERZ ŚCIEŻKĘ
+Panel6.Image1SelectionText,Wybierz
+Panel6.Image2Tittle,Trasa 2
 Panel6.Image2ContentDescription,"Droga ze szkoły do
  centrum handlowego"
-Panel6.Image2SelectionText,Trasa 2
-Panel6.Image3Tittle,WYBIERZ ŚCIEŻKĘ
+Panel6.Image2SelectionText,Wybierz
+Panel6.Image3Tittle,Trasa 3
 Panel6.Image3ContentDescription,"Droga z centrum handlowego
  do szpitala"
-Panel6.Image3SelectionText,Trasa 3
+Panel6.Image3SelectionText,Wybierz
